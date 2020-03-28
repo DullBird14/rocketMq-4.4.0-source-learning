@@ -1,0 +1,16 @@
+#Wed Oct 09 12:36:50 CST 2019
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/acl/src/main/java/org/apache/rocketmq/acl/common/SessionCredentials.java=1547454276000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/acl/src/main/java/org/apache/rocketmq/acl/plain/PlainPermissionLoader.java=1547454276000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/acl/src/main/java/org/apache/rocketmq/acl/common/AclException.java=1547454276000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/acl/src/main/java/org/apache/rocketmq/acl/plain/RemoteAddressStrategyFactory.java=1547454276000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/acl/src/main/java/org/apache/rocketmq/acl/common/AclClientRPCHook.java=1547454276000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/acl/src/main/java/org/apache/rocketmq/acl/plain/RemoteAddressStrategy.java=1547454276000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/acl/src/main/java/org/apache/rocketmq/acl/AccessResource.java=1547454276000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/acl/src/main/java/org/apache/rocketmq/acl/common/AclSigner.java=1547454276000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/acl/src/main/java/org/apache/rocketmq/acl/common/Permission.java=1547454276000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/acl/src/main/java/org/apache/rocketmq/acl/AccessValidator.java=1547454276000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/acl/src/main/java/org/apache/rocketmq/acl/plain/PlainAccessValidator.java=1547454276000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/acl/src/main/java/org/apache/rocketmq/acl/plain/PlainAccessResource.java=1547454276000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/acl/src/main/java/org/apache/rocketmq/acl/common/AclUtils.java=1547454276000
+configuration*?=348724275151B6C309D3B98EA2F613BBE84DA9CE
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/acl/src/main/java/org/apache/rocketmq/acl/common/SigningAlgorithm.java=1547454276000

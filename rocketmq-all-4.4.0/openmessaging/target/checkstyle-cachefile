@@ -1,0 +1,18 @@
+#Wed Oct 09 12:36:57 CST 2019
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/openmessaging/src/main/java/io/openmessaging/rocketmq/consumer/LocalMessageCache.java=1547450304000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/openmessaging/src/main/java/io/openmessaging/rocketmq/utils/OMSUtil.java=1547450304000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/openmessaging/src/main/java/io/openmessaging/rocketmq/producer/AbstractOMSProducer.java=1547450304000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/openmessaging/src/main/java/io/openmessaging/rocketmq/domain/ConsumeRequest.java=1547450304000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/openmessaging/src/main/java/io/openmessaging/rocketmq/utils/BeanUtils.java=1547450304000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/openmessaging/src/main/java/io/openmessaging/rocketmq/MessagingAccessPointImpl.java=1547450304000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/openmessaging/src/main/java/io/openmessaging/rocketmq/consumer/PullConsumerImpl.java=1547450304000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/openmessaging/src/main/java/io/openmessaging/rocketmq/domain/SendResultImpl.java=1547450304000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/openmessaging/src/main/java/io/openmessaging/rocketmq/domain/BytesMessageImpl.java=1547450304000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/openmessaging/src/main/java/io/openmessaging/rocketmq/domain/RocketMQConstants.java=1547450304000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/openmessaging/src/main/java/io/openmessaging/rocketmq/producer/ProducerImpl.java=1547450304000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/openmessaging/src/main/java/io/openmessaging/rocketmq/promise/FutureState.java=1547450304000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/openmessaging/src/main/java/io/openmessaging/rocketmq/promise/DefaultPromise.java=1547450304000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/openmessaging/src/main/java/io/openmessaging/rocketmq/consumer/PushConsumerImpl.java=1547450304000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/openmessaging/src/main/java/io/openmessaging/rocketmq/config/ClientConfig.java=1547450304000
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/openmessaging/src/main/java/io/openmessaging/rocketmq/domain/NonStandardKeys.java=1547450304000
+configuration*?=0E1268891C528571328D58E09FB15442073A1233

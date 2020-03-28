@@ -1,0 +1,5 @@
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/filter/src/test/java/org/apache/rocketmq/filter/ExpressionTest.java
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/filter/src/test/java/org/apache/rocketmq/filter/BloomFilterTest.java
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/filter/src/test/java/org/apache/rocketmq/filter/ParserTest.java
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/filter/src/test/java/org/apache/rocketmq/filter/BitsArrayTest.java
+/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/filter/src/test/java/org/apache/rocketmq/filter/FilterSpiTest.java
