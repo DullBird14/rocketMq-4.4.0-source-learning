@@ -1,1 +1,5 @@
 /console/rocketmq-externals-master/.github/
+*.zip
+*.class
+*.log
+*.iml

@@ -320,7 +320,7 @@ public class ConsumeMessageConcurrentlyService implements ConsumeMessageService 
             case CLUSTERING:
                 // 集群模式
                 List<MessageExt> msgBackFailed = new ArrayList<MessageExt>(consumeRequest.getMsgs().size());
-                // 注意 i = ackIndex + 1 把消费成功的告诉broker
+                // 注意 i = ackIndex + 1 到结尾的消息告诉broker的告诉broker
                 for (int i = ackIndex + 1; i < consumeRequest.getMsgs().size(); i++) {
                     MessageExt msg = consumeRequest.getMsgs().get(i);
                     // 给broker发消息
@@ -346,7 +346,7 @@ public class ConsumeMessageConcurrentlyService implements ConsumeMessageService 
         // 从 ProcessQueue 中删除已经消费的消息。并且返回下一条需要消费的位置 offset
         long offset = consumeRequest.getProcessQueue().removeMessage(consumeRequest.getMsgs());
         if (offset >= 0 && !consumeRequest.getProcessQueue().isDropped()) {
-            // 更新存储的 offset
+            // 更新存储的 offset,同时更新了broker的消费进度
             this.defaultMQPushConsumerImpl.getOffsetStore().updateOffset(consumeRequest.getMessageQueue(), offset, true);
         }
     }
@@ -463,6 +463,7 @@ public class ConsumeMessageConcurrentlyService implements ConsumeMessageService 
                 // 真正的消费代码，listener 就是我们注册的匿名消费代码
                 status = listener.consumeMessage(Collections.unmodifiableList(msgs), context);
             } catch (Throwable e) {
+                //如果是异常报错的情况
                 log.warn("consumeMessage exception: {} Group: {} Msgs: {} MQ: {}",
                     RemotingHelper.exceptionSimpleDesc(e),
                     ConsumeMessageConcurrentlyService.this.consumerGroup,
@@ -475,8 +476,10 @@ public class ConsumeMessageConcurrentlyService implements ConsumeMessageService 
             if (null == status) {
                 // 如果状态没返回。判断是否有异常
                 if (hasException) {
+                    // 如果是异常
                     returnType = ConsumeReturnType.EXCEPTION;
                 } else {
+                    // 如果是返回null
                     returnType = ConsumeReturnType.RETURNNULL;
                 }
             } else if (consumeRT >= defaultMQPushConsumer.getConsumeTimeout() * 60 * 1000) {
@@ -495,7 +498,8 @@ public class ConsumeMessageConcurrentlyService implements ConsumeMessageService 
             }
 
             if (null == status) {
-                //如果状态返回null，那么稍后再消费
+                //如果状态返回null，设置状态为 RECONSUME_LATER，所以不管是抛出异常还是主动返回 RECONSUME_LATER，最后状态都一样
+                // 而且为什么不在上面处理
                 log.warn("consumeMessage return null, Group: {} Msgs: {} MQ: {}",
                     ConsumeMessageConcurrentlyService.this.consumerGroup,
                     msgs,

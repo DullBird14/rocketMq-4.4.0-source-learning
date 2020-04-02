@@ -31,10 +31,18 @@ public class Consumer {
                 System.out.printf("===================第%d次消息接收==========================\n", increment);
                 for (MessageExt msg : msgs) {
                     byte[] body = msg.getBody();
-                    System.out.printf("收到的消息id=%s, 消息的内容是%s\n", msg.getMsgId(), new String(body));
+                    String number = new String(body);
+                    Integer integer = Integer.valueOf(number);
+                    if (integer%2==0) {
+                        System.out.printf("===================第%d次消息接收结束==========================\n", increment);
+                        throw new RuntimeException("=============================");
+                    }
+                    System.out.printf("收到的消息id=%s, 消息的内容是%s\n", msg.getMsgId(), number);
                 }
                 System.out.printf("===================第%d次消息接收结束==========================\n", increment);
                 return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
+//                System.out.println(1/0);
+//                return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
 
             }
         });

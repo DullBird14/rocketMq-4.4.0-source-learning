@@ -2489,3 +2489,988 @@
 2020-03-26 23:39:22 INFO AllocateMappedFileService - AllocateMappedFileService service end
 2020-03-26 23:39:22 INFO ShutdownHook - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/abort delete OK
 2020-03-26 23:39:22 WARN TransactionalMessageCheckService - message store has shutdown, so getMessage is forbidden
+2020-03-30 22:13:52 INFO AllocateMappedFileService - AllocateMappedFileService service started
+2020-03-30 22:13:52 INFO main - last shutdown normally
+2020-03-30 22:13:52 INFO main - load commit log OK
+2020-03-30 22:13:52 INFO main - load logics queue all over, OK
+2020-03-30 22:13:52 INFO main - store checkpoint file not exists, /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/checkpoint
+2020-03-30 22:13:52 INFO main - load over, and the max phy offset = 0
+2020-03-30 22:13:53 INFO FlushConsumeQueueService - FlushConsumeQueueService service started
+2020-03-30 22:13:53 INFO FlushRealTimeService - FlushRealTimeService service started
+2020-03-30 22:13:53 INFO StoreStatsService - StoreStatsService service started
+2020-03-30 22:13:53 INFO ReputMessageService - ReputMessageService service started
+2020-03-30 22:13:53 INFO AcceptSocketService - AcceptSocketService service started
+2020-03-30 22:13:53 INFO GroupTransferService - GroupTransferService service started
+2020-03-30 22:13:53 INFO HAClient - HAClient service started
+2020-03-30 22:13:53 INFO main - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/abort create OK
+2020-03-30 22:14:53 INFO StoreStatsService - [STORETPS] put_tps  get_found_tps  get_miss_tps  get_transfered_tps 
+2020-03-30 22:14:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:14:53 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:14:53 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:14:53 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:15:03 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:15:03 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:15:03 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:15:13 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:15:13 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:15:13 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:15:23 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:15:23 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:15:23 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:15:33 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:15:33 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:15:33 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:15:43 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:15:43 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:15:43 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:15:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.1662151156026129 get_transfered_tps 0.0
+2020-03-30 22:15:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:15:53 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:15:53 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:15:53 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:16:03 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:16:03 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:16:03 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:16:13 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:16:13 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:16:13 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:16:23 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:16:23 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:16:23 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:16:33 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:16:33 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:16:33 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:16:43 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:16:43 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:16:43 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:16:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.16622616732326 get_transfered_tps 0.0
+2020-03-30 22:16:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:16:53 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:16:53 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:16:53 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:17:03 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:17:03 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:17:03 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:17:13 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:17:13 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:17:13 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:17:23 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:17:23 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:17:23 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:17:33 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:17:33 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:17:33 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:17:43 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:17:43 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:17:43 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:17:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.16622340425531915 get_transfered_tps 0.0
+2020-03-30 22:17:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:17:53 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:17:53 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:17:53 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:18:03 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:18:03 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:18:03 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:18:13 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:18:13 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:18:13 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:18:23 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:18:23 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:18:23 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:18:33 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:18:33 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:18:33 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:18:43 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:18:43 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:18:43 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:18:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.43197979663720343 get_transfered_tps 0.0
+2020-03-30 22:18:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:18:53 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:18:53 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:18:53 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:19:03 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:19:03 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:19:03 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:19:13 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:19:13 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:19:13 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:19:23 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:19:23 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:19:23 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:19:33 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:19:33 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:19:33 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:19:43 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:19:43 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:19:43 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:19:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 1.7276034485622687 get_transfered_tps 0.0
+2020-03-30 22:19:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:19:53 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:19:53 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:19:53 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:20:03 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:20:03 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:20:03 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:20:13 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:20:13 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:20:13 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:20:23 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:20:23 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:20:23 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:20:33 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:20:33 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:20:33 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:20:43 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:20:43 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:20:43 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:20:53 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:20:53 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:20:53 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:20:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 2.293273065674023 get_transfered_tps 0.0
+2020-03-30 22:20:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:21:03 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:21:03 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:21:03 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:21:13 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:21:13 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:21:13 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:21:23 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:21:23 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:21:23 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:21:33 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:21:33 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:21:33 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:21:43 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:21:43 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:21:43 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:21:53 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:21:53 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:21:53 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:21:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 2.2935398627200057 get_transfered_tps 0.0
+2020-03-30 22:21:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:22:03 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:22:03 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:22:03 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:22:13 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:22:13 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:22:13 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:22:23 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:22:23 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:22:23 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:22:33 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:22:33 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:22:33 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:22:43 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:22:43 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:22:43 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:22:53 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:22:53 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:22:53 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:22:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 2.293425513527887 get_transfered_tps 0.0
+2020-03-30 22:22:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:23:03 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:23:03 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:23:03 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:23:13 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:23:13 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:23:13 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:23:23 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:23:23 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:23:23 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:23:33 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:23:33 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:23:33 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:23:43 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:23:43 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:23:43 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:23:53 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2020-03-30 22:23:53 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2020-03-30 22:23:53 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2020-03-30 22:23:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 2.6908958025347576 get_transfered_tps 0.0
+2020-03-30 22:23:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:24:03 INFO AllocateMappedFileService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/commitLog mkdir OK
+2020-03-30 22:24:03 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/0 mkdir OK
+2020-03-30 22:24:03 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/index mkdir OK
+2020-03-30 22:24:06 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/1 mkdir OK
+2020-03-30 22:24:09 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/2 mkdir OK
+2020-03-30 22:24:12 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/3 mkdir OK
+2020-03-30 22:24:15 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/4 mkdir OK
+2020-03-30 22:24:18 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/5 mkdir OK
+2020-03-30 22:24:21 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/6 mkdir OK
+2020-03-30 22:24:24 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/7 mkdir OK
+2020-03-30 22:24:27 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/8 mkdir OK
+2020-03-30 22:24:30 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/9 mkdir OK
+2020-03-30 22:24:54 INFO StoreStatsService - [STORETPS] put_tps 0.16617920765753788 get_found_tps 0.16617920765753788 get_miss_tps 2.1270938580164853 get_transfered_tps 0.16617920765753788
+2020-03-30 22:24:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 10, PutMessageDistributeTime [<=0ms]:7 [0~10ms]:2 [10~50ms]:1 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:25:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:25:55 INFO StoreStatsService - [STORETPS] put_tps 0.08310755780130645 get_found_tps 0.08310755780130645 get_miss_tps 2.2771470837557968 get_transfered_tps 0.08310755780130645
+2020-03-30 22:25:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 5, PutMessageDistributeTime [<=0ms]:5 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:26:00 WARN AdminBrokerThread_13 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:26:55 INFO StoreStatsService - [STORETPS] put_tps 0.21601861083416418 get_found_tps 0.21601861083416418 get_miss_tps 2.1768029245596545 get_transfered_tps 0.21601861083416418
+2020-03-30 22:26:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 13, PutMessageDistributeTime [<=0ms]:12 [0~10ms]:1 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:27:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:27:55 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324247058041353 get_transfered_tps 0.0
+2020-03-30 22:27:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:28:00 WARN AdminBrokerThread_3 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:28:55 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03326237360298031 get_transfered_tps 0.0
+2020-03-30 22:28:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:29:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:29:55 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324633874694549 get_transfered_tps 0.0
+2020-03-30 22:29:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:30:00 WARN AdminBrokerThread_9 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:30:55 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324468085106383 get_transfered_tps 0.0
+2020-03-30 22:30:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:31:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:31:55 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.8809547554935009 get_transfered_tps 0.0
+2020-03-30 22:31:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:32:00 WARN AdminBrokerThread_15 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:32:56 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 1.7613532510260712 get_transfered_tps 0.0
+2020-03-30 22:32:56 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:33:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:33:16 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/testTopic/13 mkdir OK
+2020-03-30 22:33:56 INFO StoreStatsService - [STORETPS] put_tps 0.033241918058671986 get_found_tps 0.016620959029335993 get_miss_tps 2.310313305077703 get_transfered_tps 0.016620959029335993
+2020-03-30 22:33:56 INFO StoreStatsService - [PAGECACHERT] TotalPut 2, PutMessageDistributeTime [<=0ms]:2 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:34:00 WARN AdminBrokerThread_9 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:34:56 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.5649623635366644 get_transfered_tps 0.0
+2020-03-30 22:34:56 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:35:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:35:34 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/2 mkdir OK
+2020-03-30 22:35:44 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/%RETRY%myGroup/0 mkdir OK
+2020-03-30 22:35:56 INFO StoreStatsService - [STORETPS] put_tps 0.03322755893738266 get_found_tps 0.0 get_miss_tps 0.9137578707780233 get_transfered_tps 0.0
+2020-03-30 22:35:56 INFO StoreStatsService - [PAGECACHERT] TotalPut 2, PutMessageDistributeTime [<=0ms]:2 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:36:00 WARN AdminBrokerThread_15 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:36:20 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/3 mkdir OK
+2020-03-30 22:36:56 INFO StoreStatsService - [STORETPS] put_tps 0.03322700691121744 get_found_tps 0.03322700691121744 get_miss_tps 1.6945773524720893 get_transfered_tps 0.03322700691121744
+2020-03-30 22:36:56 INFO StoreStatsService - [PAGECACHERT] TotalPut 2, PutMessageDistributeTime [<=0ms]:2 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:37:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:37:57 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.3323087147960455 get_transfered_tps 0.0
+2020-03-30 22:37:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:38:00 WARN AdminBrokerThread_5 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:38:57 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 2.2939211090609883 get_transfered_tps 0.0
+2020-03-30 22:38:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:39:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:39:51 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/10 mkdir OK
+2020-03-30 22:39:57 INFO StoreStatsService - [STORETPS] put_tps 0.033236946189384116 get_found_tps 0.033236946189384116 get_miss_tps 1.4624256323329012 get_transfered_tps 0.033236946189384116
+2020-03-30 22:39:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 2, PutMessageDistributeTime [<=0ms]:2 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:40:00 WARN AdminBrokerThread_11 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:40:41 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/4 mkdir OK
+2020-03-30 22:40:57 INFO StoreStatsService - [STORETPS] put_tps 0.16622064127923405 get_found_tps 0.06648825651169361 get_miss_tps 2.3603331061651236 get_transfered_tps 0.06648825651169361
+2020-03-30 22:40:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 10, PutMessageDistributeTime [<=0ms]:10 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:41:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:41:57 INFO StoreStatsService - [STORETPS] put_tps 0.03323252799840484 get_found_tps 0.03323252799840484 get_miss_tps 1.944102887906683 get_transfered_tps 0.03323252799840484
+2020-03-30 22:41:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 2, PutMessageDistributeTime [<=0ms]:2 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:41:59 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/5 mkdir OK
+2020-03-30 22:42:00 WARN AdminBrokerThread_1 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:42:57 INFO StoreStatsService - [STORETPS] put_tps 0.033237498545859445 get_found_tps 0.0 get_miss_tps 0.9638874578299237 get_transfered_tps 0.0
+2020-03-30 22:42:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 2, PutMessageDistributeTime [<=0ms]:1 [0~10ms]:1 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:43:00 WARN AdminBrokerThread_3 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:43:58 INFO StoreStatsService - [STORETPS] put_tps 0.06647831145088914 get_found_tps 0.04985873358816686 get_miss_tps 1.4292836961941167 get_transfered_tps 0.04985873358816686
+2020-03-30 22:43:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 4, PutMessageDistributeTime [<=0ms]:4 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:43:59 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/6 mkdir OK
+2020-03-30 22:44:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:44:58 INFO StoreStatsService - [STORETPS] put_tps 0.11635058092182902 get_found_tps 0.06648604624104516 get_miss_tps 2.2771470837557968 get_transfered_tps 0.06648604624104516
+2020-03-30 22:44:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 7, PutMessageDistributeTime [<=0ms]:6 [0~10ms]:1 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:45:00 WARN AdminBrokerThread_9 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:45:58 INFO StoreStatsService - [STORETPS] put_tps 0.016606054567495306 get_found_tps 0.016606054567495306 get_miss_tps 1.461332801939587 get_transfered_tps 0.016606054567495306
+2020-03-30 22:45:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 1, PutMessageDistributeTime [<=0ms]:1 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:46:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:46:58 INFO StoreStatsService - [STORETPS] put_tps 0.01661405549094534 get_found_tps 0.0 get_miss_tps 0.04984216647283602 get_transfered_tps 0.0
+2020-03-30 22:46:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 1, PutMessageDistributeTime [<=0ms]:1 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:47:00 WARN AdminBrokerThread_15 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:47:58 INFO StoreStatsService - [STORETPS] put_tps 0.016622616732326005 get_found_tps 0.0 get_miss_tps 0.03324523346465201 get_transfered_tps 0.0
+2020-03-30 22:47:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 1, PutMessageDistributeTime [<=0ms]:1 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:48:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:48:58 INFO StoreStatsService - [STORETPS] put_tps 0.016622616732326005 get_found_tps 0.0 get_miss_tps 0.03324523346465201 get_transfered_tps 0.0
+2020-03-30 22:48:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 1, PutMessageDistributeTime [<=0ms]:1 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:49:00 WARN AdminBrokerThread_5 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:49:59 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033238050920694005 get_transfered_tps 0.0
+2020-03-30 22:49:59 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:50:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:50:59 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033238603313888754 get_transfered_tps 0.0
+2020-03-30 22:50:59 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:51:00 WARN AdminBrokerThread_11 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:51:59 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03323087147960455 get_transfered_tps 0.0
+2020-03-30 22:51:59 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:52:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:52:59 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033223143241582084 get_transfered_tps 0.0
+2020-03-30 22:52:59 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:53:00 WARN AdminBrokerThread_1 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:53:59 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033233632436025264 get_transfered_tps 0.0
+2020-03-30 22:53:59 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:54:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:55:00 WARN AdminBrokerThread_7 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:55:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033239708155362396 get_transfered_tps 0.0
+2020-03-30 22:55:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:56:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:56:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033243575679000034 get_transfered_tps 0.0
+2020-03-30 22:56:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:57:00 WARN AdminBrokerThread_13 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:57:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332667997338656 get_transfered_tps 0.0
+2020-03-30 22:57:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:58:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:58:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03326237360298031 get_transfered_tps 0.0
+2020-03-30 22:58:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 22:59:00 WARN AdminBrokerThread_3 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 22:59:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03326348002528024 get_transfered_tps 0.0
+2020-03-30 22:59:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:00:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:00:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033269566663894204 get_transfered_tps 0.0
+2020-03-30 23:00:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:01:00 WARN AdminBrokerThread_9 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:01:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03327067356478632 get_transfered_tps 0.0
+2020-03-30 23:01:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:02:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:02:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033265693090715545 get_transfered_tps 0.0
+2020-03-30 23:02:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:03:00 WARN AdminBrokerThread_15 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:03:01 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03326126725428239 get_transfered_tps 0.0
+2020-03-30 23:03:01 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:04:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:04:01 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033238050920694005 get_transfered_tps 0.0
+2020-03-30 23:04:01 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:05:00 WARN AdminBrokerThread_5 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:05:01 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033238603313888754 get_transfered_tps 0.0
+2020-03-30 23:05:01 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:06:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:06:01 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033256289595769796 get_transfered_tps 0.0
+2020-03-30 23:06:01 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:07:00 WARN AdminBrokerThread_11 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:07:01 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033266246403087105 get_transfered_tps 0.0
+2020-03-30 23:07:01 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:08:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:08:01 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332667997338656 get_transfered_tps 0.0
+2020-03-30 23:08:01 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:09:00 WARN AdminBrokerThread_1 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:09:01 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03326348002528024 get_transfered_tps 0.0
+2020-03-30 23:09:01 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:10:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:10:02 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033265693090715545 get_transfered_tps 0.0
+2020-03-30 23:10:02 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:11:00 WARN AdminBrokerThread_7 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:11:02 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332667997338656 get_transfered_tps 0.0
+2020-03-30 23:11:02 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:12:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:12:02 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03326237360298031 get_transfered_tps 0.0
+2020-03-30 23:12:02 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:13:00 WARN AdminBrokerThread_13 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:13:02 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324744410273461 get_transfered_tps 0.0
+2020-03-30 23:13:02 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:14:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:14:02 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03326458652118954 get_transfered_tps 0.0
+2020-03-30 23:14:02 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:15:00 WARN AdminBrokerThread_3 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:15:02 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03327067356478632 get_transfered_tps 0.0
+2020-03-30 23:15:02 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:16:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:16:02 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332667997338656 get_transfered_tps 0.0
+2020-03-30 23:16:02 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:17:00 WARN AdminBrokerThread_9 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:17:02 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332667997338656 get_transfered_tps 0.0
+2020-03-30 23:17:02 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:18:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:18:03 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033269566663894204 get_transfered_tps 0.0
+2020-03-30 23:18:03 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:19:00 WARN AdminBrokerThread_15 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:19:03 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033260160979179144 get_transfered_tps 0.0
+2020-03-30 23:19:03 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:20:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:20:03 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033256289595769796 get_transfered_tps 0.0
+2020-03-30 23:20:03 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:21:00 WARN AdminBrokerThread_5 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:21:03 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03326458652118954 get_transfered_tps 0.0
+2020-03-30 23:21:03 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:22:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:22:03 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03319336796508058 get_transfered_tps 0.0
+2020-03-30 23:22:03 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:23:00 WARN AdminBrokerThread_11 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:23:03 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320328712542542 get_transfered_tps 0.0
+2020-03-30 23:23:03 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:24:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:24:04 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321210913499061 get_transfered_tps 0.0
+2020-03-30 23:24:04 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:25:00 WARN AdminBrokerThread_1 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:25:04 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332016335203692 get_transfered_tps 0.0
+2020-03-30 23:25:04 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:26:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:26:04 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321541859731287 get_transfered_tps 0.0
+2020-03-30 23:26:04 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:27:00 WARN AdminBrokerThread_7 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:27:04 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321266066624597 get_transfered_tps 0.0
+2020-03-30 23:27:04 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:28:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:28:05 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033206594829733184 get_transfered_tps 0.0
+2020-03-30 23:28:05 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:29:00 WARN AdminBrokerThread_13 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:29:05 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03319667369329593 get_transfered_tps 0.0
+2020-03-30 23:29:05 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:30:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:30:05 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320328712542542 get_transfered_tps 0.0
+2020-03-30 23:30:05 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:31:00 WARN AdminBrokerThread_3 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:31:05 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320990319313219 get_transfered_tps 0.0
+2020-03-30 23:31:05 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:32:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:32:05 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033225350942769336 get_transfered_tps 0.0
+2020-03-30 23:32:05 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:33:00 WARN AdminBrokerThread_9 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:33:06 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0331928170743851 get_transfered_tps 0.0
+2020-03-30 23:33:06 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:34:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:34:06 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033211557622052475 get_transfered_tps 0.0
+2020-03-30 23:34:06 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:35:00 WARN AdminBrokerThread_15 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:35:06 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321045465112417 get_transfered_tps 0.0
+2020-03-30 23:35:06 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:36:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:36:06 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03319336796508058 get_transfered_tps 0.0
+2020-03-30 23:36:06 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:37:00 WARN AdminBrokerThread_5 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:37:07 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033223143241582084 get_transfered_tps 0.0
+2020-03-30 23:37:07 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:38:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:38:07 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321100612743063 get_transfered_tps 0.0
+2020-03-30 23:38:07 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:39:00 WARN AdminBrokerThread_11 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:39:07 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033229215125938724 get_transfered_tps 0.0
+2020-03-30 23:39:07 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:40:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-30 23:40:07 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332021847037535 get_transfered_tps 0.0
+2020-03-30 23:40:07 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-30 23:50:14 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0030279128142784257 get_transfered_tps 0.0
+2020-03-30 23:50:14 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-31 01:40:09 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 2.7614922607108275E-4 get_transfered_tps 0.0
+2020-03-31 01:40:09 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-31 01:41:01 WARN AdminBrokerThread_7 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-31 01:41:09 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 2.750086696483107E-4 get_transfered_tps 0.0
+2020-03-31 01:41:09 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-31 07:30:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 9.529257990509144E-5 get_transfered_tps 0.0
+2020-03-31 07:30:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-31 08:32:48 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 8.103473578259742E-5 get_transfered_tps 0.0
+2020-03-31 08:32:48 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-31 08:33:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-31 08:33:48 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.06563294773976537 get_transfered_tps 0.0
+2020-03-31 08:33:48 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-31 08:34:00 WARN AdminBrokerThread_1 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-31 08:34:49 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03325960786922322 get_transfered_tps 0.0
+2020-03-31 08:34:49 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-31 08:35:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-31 08:35:49 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033252971984371105 get_transfered_tps 0.0
+2020-03-31 08:35:49 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-03-31 08:36:00 WARN AdminBrokerThread_7 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-03-31 08:36:40 INFO HAClient - HAClient service end
+2020-03-31 08:36:40 INFO GroupTransferService - GroupTransferService service end
+2020-03-31 08:36:40 INFO StoreStatsService - StoreStatsService service end
+2020-03-31 08:36:40 INFO FlushRealTimeService - FlushRealTimeService service shutdown, retry 1 times OK
+2020-03-31 08:36:40 INFO FlushRealTimeService - FlushRealTimeService service end
+2020-03-31 08:36:40 INFO ReputMessageService - ReputMessageService service end
+2020-03-31 08:36:40 INFO FlushConsumeQueueService - FlushConsumeQueueService service end
+2020-03-31 08:36:40 WARN AllocateMappedFileService - AllocateMappedFileService interrupted, possibly by shutdown.
+2020-03-31 08:36:40 INFO AllocateMappedFileService - AllocateMappedFileService service end
+2020-03-31 08:36:40 INFO ShutdownHook - delete pre allocated maped file, /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/commitLog/00000000001073741824
+2020-03-31 08:36:40 INFO ShutdownHook - unmap file[REF:0] /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/commitLog/00000000001073741824 OK
+2020-03-31 08:36:40 INFO ShutdownHook - close file channel /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/commitLog/00000000001073741824 OK
+2020-03-31 08:36:40 INFO ShutdownHook - delete file[REF:0] /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/commitLog/00000000001073741824 OK, W:0 M:0, 0
+2020-03-31 08:36:40 INFO ShutdownHook - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/abort delete OK
+2020-03-31 08:36:40 WARN TransactionalMessageCheckService - message store has shutdown, so getMessage is forbidden
+2020-04-01 22:56:59 INFO AllocateMappedFileService - AllocateMappedFileService service started
+2020-04-01 22:56:59 INFO main - last shutdown normally
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/commitLog/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load commit log OK
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/9/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load consume queue test_topic-9 OK
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/0/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load consume queue test_topic-0 OK
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/7/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load consume queue test_topic-7 OK
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/6/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load consume queue test_topic-6 OK
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/1/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load consume queue test_topic-1 OK
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/10/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load consume queue test_topic-10 OK
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/8/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load consume queue test_topic-8 OK
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/4/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load consume queue test_topic-4 OK
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/3/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load consume queue test_topic-3 OK
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/2/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load consume queue test_topic-2 OK
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/5/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load consume queue test_topic-5 OK
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/%RETRY%myGroup/0/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load consume queue %RETRY%myGroup-0 OK
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/6/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load consume queue SCHEDULE_TOPIC_XXXX-6 OK
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/4/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load consume queue SCHEDULE_TOPIC_XXXX-4 OK
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/3/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load consume queue SCHEDULE_TOPIC_XXXX-3 OK
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/2/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load consume queue SCHEDULE_TOPIC_XXXX-2 OK
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/5/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load consume queue SCHEDULE_TOPIC_XXXX-5 OK
+2020-04-01 22:56:59 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/testTopic/13/00000000000000000000 OK
+2020-04-01 22:56:59 INFO main - load consume queue testTopic-13 OK
+2020-04-01 22:56:59 INFO main - load logics queue all over, OK
+2020-04-01 22:56:59 INFO main - store checkpoint file exists, /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/checkpoint
+2020-04-01 22:56:59 INFO main - store checkpoint file physicMsgTimestamp 1585579688504, 20200330224808504
+2020-04-01 22:56:59 INFO main - store checkpoint file logicsMsgTimestamp 1585579688504, 20200330224808504
+2020-04-01 22:56:59 INFO main - store checkpoint file indexMsgTimestamp 0, 19700101080000000
+2020-04-01 22:56:59 INFO main - load index file OK, /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/index/20200330222403289
+2020-04-01 22:56:59 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/2/00000000000000000000 0 0 0
+2020-04-01 22:56:59 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/2/00000000000000000000 80
+2020-04-01 22:56:59 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/3/00000000000000000000 0 0 0
+2020-04-01 22:56:59 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/3/00000000000000000000 80
+2020-04-01 22:56:59 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/4/00000000000000000000 0 0 0
+2020-04-01 22:56:59 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/4/00000000000000000000 60
+2020-04-01 22:56:59 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/5/00000000000000000000 0 0 0
+2020-04-01 22:56:59 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/5/00000000000000000000 60
+2020-04-01 22:56:59 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/6/00000000000000000000 0 0 0
+2020-04-01 22:56:59 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/6/00000000000000000000 20
+2020-04-01 22:56:59 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/%RETRY%myGroup/0/00000000000000000000 0 0 0
+2020-04-01 22:56:59 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/%RETRY%myGroup/0/00000000000000000000 300
+2020-04-01 22:56:59 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/0/00000000000000000000 0 0 0
+2020-04-01 22:56:59 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/0/00000000000000000000 300
+2020-04-01 22:56:59 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/1/00000000000000000000 0 0 0
+2020-04-01 22:56:59 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/1/00000000000000000000 80
+2020-04-01 22:56:59 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/2/00000000000000000000 0 0 0
+2020-04-01 22:56:59 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/2/00000000000000000000 40
+2020-04-01 22:56:59 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/3/00000000000000000000 0 0 0
+2020-04-01 22:56:59 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/3/00000000000000000000 40
+2020-04-01 22:56:59 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/4/00000000000000000000 0 0 0
+2020-04-01 22:56:59 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/4/00000000000000000000 60
+2020-04-01 22:56:59 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/5/00000000000000000000 0 0 0
+2020-04-01 22:56:59 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/5/00000000000000000000 20
+2020-04-01 22:56:59 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/6/00000000000000000000 0 0 0
+2020-04-01 22:56:59 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/6/00000000000000000000 20
+2020-04-01 22:56:59 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/7/00000000000000000000 0 0 0
+2020-04-01 22:56:59 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/7/00000000000000000000 20
+2020-04-01 22:56:59 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/8/00000000000000000000 0 0 0
+2020-04-01 22:56:59 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/8/00000000000000000000 60
+2020-04-01 22:56:59 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/9/00000000000000000000 0 0 0
+2020-04-01 22:56:59 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/9/00000000000000000000 20
+2020-04-01 22:56:59 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/10/00000000000000000000 0 0 0
+2020-04-01 22:56:59 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/10/00000000000000000000 20
+2020-04-01 22:56:59 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/testTopic/13/00000000000000000000 0 0 0
+2020-04-01 22:56:59 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/testTopic/13/00000000000000000000 20
+2020-04-01 22:56:59 WARN main - found a illegal magic code 0x0
+2020-04-01 22:56:59 INFO main - recover physics file end, /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/commitLog/00000000000000000000
+2020-04-01 22:56:59 INFO main - Compute logical min offset: 0, topic: SCHEDULE_TOPIC_XXXX, queueId: 2
+2020-04-01 22:56:59 INFO main - Compute logical min offset: 0, topic: SCHEDULE_TOPIC_XXXX, queueId: 3
+2020-04-01 22:56:59 INFO main - Compute logical min offset: 0, topic: SCHEDULE_TOPIC_XXXX, queueId: 4
+2020-04-01 22:56:59 INFO main - Compute logical min offset: 0, topic: SCHEDULE_TOPIC_XXXX, queueId: 5
+2020-04-01 22:56:59 INFO main - Compute logical min offset: 0, topic: SCHEDULE_TOPIC_XXXX, queueId: 6
+2020-04-01 22:56:59 INFO main - Compute logical min offset: 0, topic: %RETRY%myGroup, queueId: 0
+2020-04-01 22:56:59 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 0
+2020-04-01 22:56:59 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 1
+2020-04-01 22:56:59 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 2
+2020-04-01 22:56:59 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 3
+2020-04-01 22:56:59 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 4
+2020-04-01 22:56:59 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 5
+2020-04-01 22:56:59 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 6
+2020-04-01 22:56:59 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 7
+2020-04-01 22:56:59 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 8
+2020-04-01 22:56:59 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 9
+2020-04-01 22:56:59 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 10
+2020-04-01 22:56:59 INFO main - Compute logical min offset: 0, topic: testTopic, queueId: 13
+2020-04-01 22:56:59 INFO main - load over, and the max phy offset = 14711
+2020-04-01 22:57:00 INFO FlushConsumeQueueService - FlushConsumeQueueService service started
+2020-04-01 22:57:00 INFO FlushRealTimeService - FlushRealTimeService service started
+2020-04-01 22:57:00 INFO StoreStatsService - StoreStatsService service started
+2020-04-01 22:57:00 INFO ReputMessageService - ReputMessageService service started
+2020-04-01 22:57:00 INFO AcceptSocketService - AcceptSocketService service started
+2020-04-01 22:57:00 INFO GroupTransferService - GroupTransferService service started
+2020-04-01 22:57:00 INFO HAClient - HAClient service started
+2020-04-01 22:57:00 INFO main - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/abort create OK
+2020-04-01 22:57:59 INFO StoreStatsService - [STORETPS] put_tps  get_found_tps  get_miss_tps  get_transfered_tps 
+2020-04-01 22:57:59 INFO StoreStatsService - [PAGECACHERT] TotalPut 1, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:1 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 22:59:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03327620917425087 get_transfered_tps 0.0
+2020-04-01 22:59:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:00:00 WARN AdminBrokerThread_11 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:00:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03326237360298031 get_transfered_tps 0.0
+2020-04-01 23:00:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:01:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:01:00 INFO StoreStatsService - [STORETPS] put_tps 0.016628144797884898 get_found_tps 0.0 get_miss_tps 0.033256289595769796 get_transfered_tps 0.0
+2020-04-01 23:01:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 1, PutMessageDistributeTime [<=0ms]:1 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:01:02 WARN AdminBrokerThread_7 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:01:18 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:02:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:02:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033265693090715545 get_transfered_tps 0.0
+2020-04-01 23:02:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:03:00 WARN AdminBrokerThread_7 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:03:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.03325960786922322 get_miss_tps 0.6319325495152412 get_transfered_tps 0.09977882360766965
+2020-04-01 23:03:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:03:22 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/7 mkdir OK
+2020-04-01 23:04:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:04:00 INFO StoreStatsService - [STORETPS] put_tps 0.02798063739891995 get_found_tps 0.02798063739891995 get_miss_tps 1.2451383642519376 get_transfered_tps 0.08394191219675985
+2020-04-01 23:04:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 2, PutMessageDistributeTime [<=0ms]:2 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:05:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:05:01 INFO StoreStatsService - [STORETPS] put_tps 0.582052817135635 get_found_tps 0.3991219317501497 get_miss_tps 1.8293088538548528 get_transfered_tps 0.5487926561564558
+2020-04-01 23:05:01 INFO StoreStatsService - [PAGECACHERT] TotalPut 35, PutMessageDistributeTime [<=0ms]:31 [0~10ms]:4 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:05:59 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/12 mkdir OK
+2020-04-01 23:06:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:06:01 INFO StoreStatsService - [STORETPS] put_tps 0.19965061142999752 get_found_tps 0.09982530571499876 get_miss_tps 1.2145412195324847 get_transfered_tps 0.2162881623824973
+2020-04-01 23:06:01 INFO StoreStatsService - [PAGECACHERT] TotalPut 12, PutMessageDistributeTime [<=0ms]:9 [0~10ms]:3 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:07:00 WARN AdminBrokerThread_7 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:07:01 INFO StoreStatsService - [STORETPS] put_tps 0.06648715135800007 get_found_tps 0.033243575679000034 get_miss_tps 1.3629866028390014 get_transfered_tps 0.033243575679000034
+2020-04-01 23:07:01 INFO StoreStatsService - [PAGECACHERT] TotalPut 4, PutMessageDistributeTime [<=0ms]:4 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:08:11 INFO StoreStatsService - [STORETPS] put_tps 0.021684212808864504 get_found_tps 0.021684212808864504 get_miss_tps 0.9107369379723093 get_transfered_tps 0.021684212808864504
+2020-04-01 23:08:11 INFO StoreStatsService - [PAGECACHERT] TotalPut 1, PutMessageDistributeTime [<=0ms]:1 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:08:13 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:08:14 WARN AdminBrokerThread_3 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:08:18 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:09:18 INFO StoreStatsService - [STORETPS] put_tps 0.0067899725685108235 get_found_tps 0.0067899725685108235 get_miss_tps 0.6110975311659741 get_transfered_tps 0.0067899725685108235
+2020-04-01 23:09:18 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:09:18 WARN AdminBrokerThread_7 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:09:18 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:10:58 WARN AdminBrokerThread_9 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:10:58 INFO StoreStatsService - [STORETPS] put_tps 0.004057058470326674 get_found_tps 0.004057058470326674 get_miss_tps 0.373249379270054 get_transfered_tps 0.004057058470326674
+2020-04-01 23:10:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:10:58 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:10:58 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:10:58 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:11:39 INFO FlushRealTimeService - Flush data to disk costs 8686 ms
+2020-04-01 23:11:39 WARN AdminBrokerThread_15 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:11:39 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:11:39 WARN AdminBrokerThread_1 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:12:01 INFO StoreStatsService - [STORETPS] put_tps 0.009910213465998057 get_found_tps 0.0033034044886660193 get_miss_tps 0.2774859770479456 get_transfered_tps 0.0033034044886660193
+2020-04-01 23:12:01 INFO StoreStatsService - [PAGECACHERT] TotalPut 2, PutMessageDistributeTime [<=0ms]:2 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:12:05 WARN AdminBrokerThread_3 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:12:12 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:12:16 WARN AdminBrokerThread_5 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:12:45 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/8 mkdir OK
+2020-04-01 23:13:03 INFO StoreStatsService - [STORETPS] put_tps 0.011550945444884664 get_found_tps 0.002887736361221166 get_miss_tps 0.17326418167326996 get_transfered_tps 0.002887736361221166
+2020-04-01 23:13:03 INFO StoreStatsService - [PAGECACHERT] TotalPut 1, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:1 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:13:07 WARN AdminBrokerThread_7 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:13:24 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:13:24 WARN AdminBrokerThread_9 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:14:58 INFO StoreStatsService - [STORETPS] put_tps 0.00671438355244605 get_found_tps 0.0 get_miss_tps 0.1029538811375061 get_transfered_tps 0.0
+2020-04-01 23:14:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:14:58 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:14:58 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:14:58 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:15:12 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:15:12 WARN AdminBrokerThread_9 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:15:50 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:16:14 INFO StoreStatsService - [STORETPS] put_tps 0.006211887482011409 get_found_tps 0.0 get_miss_tps 0.060048245659443625 get_transfered_tps 0.0
+2020-04-01 23:16:14 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:16:24 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:16:29 WARN AdminBrokerThread_13 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:16:29 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:17:06 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:17:29 INFO StoreStatsService - [STORETPS] put_tps 0.0060180662348369805 get_found_tps 0.0 get_miss_tps 0.028084309095905906 get_transfered_tps 0.0
+2020-04-01 23:17:29 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:17:29 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:17:51 WARN AdminBrokerThread_1 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:18:15 WARN AdminBrokerThread_5 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:18:15 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:19:00 INFO StoreStatsService - [STORETPS] put_tps 0.004698309783055546 get_found_tps 0.0 get_miss_tps 0.028189858698333275 get_transfered_tps 0.0
+2020-04-01 23:19:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 1, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:1 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:19:03 WARN AdminBrokerThread_7 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:19:14 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:19:18 WARN AdminBrokerThread_9 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:19:32 WARN AdminBrokerThread_11 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:20:14 INFO StoreStatsService - [STORETPS] put_tps 0.00415682019882071 get_found_tps 0.0 get_miss_tps 0.02494092119292426 get_transfered_tps 0.0
+2020-04-01 23:20:14 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:20:16 WARN AdminBrokerThread_13 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:20:21 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:20:26 WARN AdminBrokerThread_15 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:21:22 INFO StoreStatsService - [STORETPS] put_tps 0.0019478065750158746 get_found_tps 0.0 get_miss_tps 0.027269292050222244 get_transfered_tps 0.0
+2020-04-01 23:21:22 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:21:23 WARN AdminBrokerThread_11 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:21:34 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:21:34 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:22:02 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:22:19 WARN AdminBrokerThread_15 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:22:19 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:22:19 WARN SendMessageThread_1 - putMessage not in lock eclipse time(ms)=15988, bodyLength=1
+2020-04-01 23:22:35 INFO StoreStatsService - [STORETPS] put_tps 0.0036848631349710092 get_found_tps 0.0 get_miss_tps 0.025794041944797067 get_transfered_tps 0.0
+2020-04-01 23:22:35 INFO StoreStatsService - [PAGECACHERT] TotalPut 1, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:1 
+2020-04-01 23:23:21 WARN AdminBrokerThread_1 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:23:21 WARN AdminBrokerThread_3 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:23:21 WARN AdminBrokerThread_5 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:23:35 INFO StoreStatsService - [STORETPS] put_tps 0.01091336696469253 get_found_tps 0.0 get_miss_tps 0.027283417411731323 get_transfered_tps 0.0
+2020-04-01 23:23:35 INFO StoreStatsService - [PAGECACHERT] TotalPut 2, PutMessageDistributeTime [<=0ms]:1 [0~10ms]:1 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:24:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:24:35 INFO StoreStatsService - [STORETPS] put_tps 0.01663229326059477 get_found_tps 0.0 get_miss_tps 0.03326458652118954 get_transfered_tps 0.0
+2020-04-01 23:24:35 INFO StoreStatsService - [PAGECACHERT] TotalPut 1, PutMessageDistributeTime [<=0ms]:1 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:25:00 WARN AdminBrokerThread_11 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:25:35 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332408130702877 get_transfered_tps 0.0
+2020-04-01 23:25:35 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:26:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:26:36 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03323915572544457 get_transfered_tps 0.0
+2020-04-01 23:26:36 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:27:00 WARN AdminBrokerThread_15 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:27:36 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324026060364313 get_transfered_tps 0.0
+2020-04-01 23:27:36 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:28:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:28:36 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332518662609939 get_transfered_tps 0.0
+2020-04-01 23:28:36 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:29:00 WARN AdminBrokerThread_7 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:29:36 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033267906450647054 get_transfered_tps 0.0
+2020-04-01 23:29:36 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:30:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:30:36 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03326513979675 get_transfered_tps 0.0
+2020-04-01 23:30:36 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:31:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:31:36 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03326071410753188 get_transfered_tps 0.0
+2020-04-01 23:31:36 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:32:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:32:36 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03325850170449821 get_transfered_tps 0.0
+2020-04-01 23:32:36 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:33:00 WARN AdminBrokerThread_1 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:33:37 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033252971984371105 get_transfered_tps 0.0
+2020-04-01 23:33:37 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:34:00 WARN AdminBrokerThread_13 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:34:37 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.03324578609661225 get_miss_tps 0.5818012566907145 get_transfered_tps 0.11636025133814289
+2020-04-01 23:34:37 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:34:56 INFO ReputMessageService - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/9 mkdir OK
+2020-04-01 23:35:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:35:37 INFO StoreStatsService - [STORETPS] put_tps 0.1496309104209616 get_found_tps 0.01662565671344018 get_miss_tps 0.5985236416838464 get_transfered_tps 0.01662565671344018
+2020-04-01 23:35:37 INFO StoreStatsService - [PAGECACHERT] TotalPut 9, PutMessageDistributeTime [<=0ms]:9 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:36:00 WARN AdminBrokerThread_3 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:36:37 INFO StoreStatsService - [STORETPS] put_tps 0.06649709906405334 get_found_tps 0.016624274766013334 get_miss_tps 0.3158612205542533 get_transfered_tps 0.03324854953202667
+2020-04-01 23:36:37 INFO StoreStatsService - [PAGECACHERT] TotalPut 4, PutMessageDistributeTime [<=0ms]:4 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:37:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:37:37 INFO StoreStatsService - [STORETPS] put_tps 0.03324965503482902 get_found_tps 0.01662482751741451 get_miss_tps 0.3657462053831192 get_transfered_tps 0.01662482751741451
+2020-04-01 23:37:37 INFO StoreStatsService - [PAGECACHERT] TotalPut 2, PutMessageDistributeTime [<=0ms]:1 [0~10ms]:1 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:38:00 WARN AdminBrokerThread_9 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:38:37 INFO StoreStatsService - [STORETPS] put_tps 0.049880287310454914 get_found_tps 0.016626762436818304 get_miss_tps 0.09976057462090983 get_transfered_tps 0.016626762436818304
+2020-04-01 23:38:37 INFO StoreStatsService - [PAGECACHERT] TotalPut 3, PutMessageDistributeTime [<=0ms]:3 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:39:00 WARN AdminBrokerThread_5 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:39:38 INFO StoreStatsService - [STORETPS] put_tps 0.016629250852249106 get_found_tps 0.0 get_miss_tps 0.049887752556747315 get_transfered_tps 0.0
+2020-04-01 23:39:38 INFO StoreStatsService - [PAGECACHERT] TotalPut 1, PutMessageDistributeTime [<=0ms]:1 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:40:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:40:38 INFO StoreStatsService - [STORETPS] put_tps 0.06648494116082707 get_found_tps 0.0 get_miss_tps 0.03324247058041353 get_transfered_tps 0.0
+2020-04-01 23:40:38 INFO StoreStatsService - [PAGECACHERT] TotalPut 4, PutMessageDistributeTime [<=0ms]:4 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:41:00 WARN AdminBrokerThread_11 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:41:38 INFO StoreStatsService - [STORETPS] put_tps 0.016620959029335993 get_found_tps 0.0 get_miss_tps 0.033241918058671986 get_transfered_tps 0.0
+2020-04-01 23:41:38 INFO StoreStatsService - [PAGECACHERT] TotalPut 1, PutMessageDistributeTime [<=0ms]:1 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:42:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:42:38 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033261820419431556 get_transfered_tps 0.0
+2020-04-01 23:42:38 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:43:00 WARN AdminBrokerThread_15 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:43:38 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324799680819231 get_transfered_tps 0.0
+2020-04-01 23:43:38 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-01 23:44:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-01 23:44:29 INFO HAClient - HAClient service end
+2020-04-01 23:44:29 INFO GroupTransferService - GroupTransferService service end
+2020-04-01 23:44:29 INFO StoreStatsService - StoreStatsService service end
+2020-04-01 23:44:29 INFO FlushRealTimeService - FlushRealTimeService service shutdown, retry 1 times OK
+2020-04-01 23:44:29 INFO FlushRealTimeService - FlushRealTimeService service end
+2020-04-01 23:44:29 INFO ReputMessageService - ReputMessageService service end
+2020-04-01 23:44:29 INFO FlushConsumeQueueService - FlushConsumeQueueService service end
+2020-04-01 23:44:29 WARN AllocateMappedFileService - AllocateMappedFileService interrupted, possibly by shutdown.
+2020-04-01 23:44:29 INFO AllocateMappedFileService - AllocateMappedFileService service end
+2020-04-01 23:44:29 INFO ShutdownHook - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/abort delete OK
+2020-04-01 23:44:29 WARN TransactionalMessageCheckService - message store has shutdown, so getMessage is forbidden
+2020-04-02 22:50:56 INFO AllocateMappedFileService - AllocateMappedFileService service started
+2020-04-02 22:50:56 INFO main - last shutdown normally
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/commitLog/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load commit log OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/9/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue test_topic-9 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/0/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue test_topic-0 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/7/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue test_topic-7 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/6/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue test_topic-6 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/1/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue test_topic-1 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/10/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue test_topic-10 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/8/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue test_topic-8 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/4/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue test_topic-4 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/3/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue test_topic-3 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/12/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue test_topic-12 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/2/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue test_topic-2 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/5/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue test_topic-5 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/%RETRY%myGroup/0/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue %RETRY%myGroup-0 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/9/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue SCHEDULE_TOPIC_XXXX-9 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/7/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue SCHEDULE_TOPIC_XXXX-7 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/6/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue SCHEDULE_TOPIC_XXXX-6 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/8/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue SCHEDULE_TOPIC_XXXX-8 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/4/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue SCHEDULE_TOPIC_XXXX-4 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/3/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue SCHEDULE_TOPIC_XXXX-3 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/2/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue SCHEDULE_TOPIC_XXXX-2 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/5/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue SCHEDULE_TOPIC_XXXX-5 OK
+2020-04-02 22:50:56 INFO main - load /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/testTopic/13/00000000000000000000 OK
+2020-04-02 22:50:56 INFO main - load consume queue testTopic-13 OK
+2020-04-02 22:50:56 INFO main - load logics queue all over, OK
+2020-04-02 22:50:56 INFO main - store checkpoint file exists, /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/checkpoint
+2020-04-02 22:50:56 INFO main - store checkpoint file physicMsgTimestamp 1585755656264, 20200401234056264
+2020-04-02 22:50:56 INFO main - store checkpoint file logicsMsgTimestamp 1585755656264, 20200401234056264
+2020-04-02 22:50:56 INFO main - store checkpoint file indexMsgTimestamp 0, 19700101080000000
+2020-04-02 22:50:56 INFO main - load index file OK, /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/index/20200330222403289
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/2/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/2/00000000000000000000 360
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/3/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/3/00000000000000000000 360
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/4/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/4/00000000000000000000 120
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/5/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/5/00000000000000000000 100
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/6/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/6/00000000000000000000 60
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/7/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/7/00000000000000000000 60
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/8/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/8/00000000000000000000 80
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/9/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/SCHEDULE_TOPIC_XXXX/9/00000000000000000000 20
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/%RETRY%myGroup/0/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/%RETRY%myGroup/0/00000000000000000000 1160
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/0/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/0/00000000000000000000 300
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/1/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/1/00000000000000000000 80
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/2/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/2/00000000000000000000 40
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/3/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/3/00000000000000000000 40
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/4/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/4/00000000000000000000 60
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/5/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/5/00000000000000000000 20
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/6/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/6/00000000000000000000 40
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/7/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/7/00000000000000000000 20
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/8/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/8/00000000000000000000 60
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/9/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/9/00000000000000000000 20
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/10/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/10/00000000000000000000 20
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/12/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/test_topic/12/00000000000000000000 20
+2020-04-02 22:50:56 INFO main - recover current consume queue file over,  /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/testTopic/13/00000000000000000000 0 0 0
+2020-04-02 22:50:56 INFO main - recover current consume queue queue over /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/consumequeue/testTopic/13/00000000000000000000 20
+2020-04-02 22:50:56 WARN main - found a illegal magic code 0x0
+2020-04-02 22:50:56 INFO main - recover physics file end, /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/commitLog/00000000000000000000
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: SCHEDULE_TOPIC_XXXX, queueId: 2
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: SCHEDULE_TOPIC_XXXX, queueId: 3
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: SCHEDULE_TOPIC_XXXX, queueId: 4
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: SCHEDULE_TOPIC_XXXX, queueId: 5
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: SCHEDULE_TOPIC_XXXX, queueId: 6
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: SCHEDULE_TOPIC_XXXX, queueId: 7
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: SCHEDULE_TOPIC_XXXX, queueId: 8
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: SCHEDULE_TOPIC_XXXX, queueId: 9
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: %RETRY%myGroup, queueId: 0
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 0
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 1
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 2
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 3
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 4
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 5
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 6
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 7
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 8
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 9
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 10
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: test_topic, queueId: 12
+2020-04-02 22:50:56 INFO main - Compute logical min offset: 0, topic: testTopic, queueId: 13
+2020-04-02 22:50:56 INFO main - load over, and the max phy offset = 41158
+2020-04-02 22:50:58 INFO FlushConsumeQueueService - FlushConsumeQueueService service started
+2020-04-02 22:50:58 INFO FlushRealTimeService - FlushRealTimeService service started
+2020-04-02 22:50:58 INFO StoreStatsService - StoreStatsService service started
+2020-04-02 22:50:58 INFO ReputMessageService - ReputMessageService service started
+2020-04-02 22:50:58 INFO AcceptSocketService - AcceptSocketService service started
+2020-04-02 22:50:58 INFO GroupTransferService - GroupTransferService service started
+2020-04-02 22:50:58 INFO HAClient - HAClient service started
+2020-04-02 22:50:58 INFO main - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/abort create OK
+2020-04-02 22:51:57 INFO StoreStatsService - [STORETPS] put_tps  get_found_tps  get_miss_tps  get_transfered_tps 
+2020-04-02 22:51:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 22:52:57 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324854953202667 get_transfered_tps 0.0
+2020-04-02 22:52:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 22:53:57 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324578609661225 get_transfered_tps 0.0
+2020-04-02 22:53:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 22:54:57 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03323584153150758 get_transfered_tps 0.0
+2020-04-02 22:54:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 22:55:57 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324965503482902 get_transfered_tps 0.0
+2020-04-02 22:55:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 22:56:57 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03323915572544457 get_transfered_tps 0.0
+2020-04-02 22:56:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 22:57:58 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03323915572544457 get_transfered_tps 0.0
+2020-04-02 22:57:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 22:58:58 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324247058041353 get_transfered_tps 0.0
+2020-04-02 22:58:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 22:59:58 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.016635613521426673 get_miss_tps 0.5656108597285069 get_transfered_tps 0.1164492946499867
+2020-04-02 22:59:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 23:00:58 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.8813649516080753 get_transfered_tps 0.0
+2020-04-02 23:00:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 23:01:58 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.9140615911319406 get_transfered_tps 0.0
+2020-04-02 23:01:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 23:02:58 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.06651479122669904 get_transfered_tps 0.0
+2020-04-02 23:02:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 23:03:59 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 1.8121664533076194 get_transfered_tps 0.0
+2020-04-02 23:03:59 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 23:04:59 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 1.7614996011699016 get_transfered_tps 0.0
+2020-04-02 23:04:59 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 23:05:59 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 1.728321201847974 get_transfered_tps 0.0
+2020-04-02 23:05:59 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 23:06:45 WARN AdminBrokerThread_1 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:06:59 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 1.9949461364543157 get_transfered_tps 0.0
+2020-04-02 23:06:59 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 23:07:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:08:10 INFO StoreStatsService - [STORETPS] put_tps 0.010642486936347286 get_found_tps 0.010642486936347286 get_miss_tps 1.2877409192980216 get_transfered_tps 0.010642486936347286
+2020-04-02 23:08:10 INFO StoreStatsService - [PAGECACHERT] TotalPut 1, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:1 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 23:08:10 WARN AdminBrokerThread_5 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:08:10 WARN AdminBrokerThread_5 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:09:00 WARN AdminBrokerThread_1 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:09:10 INFO StoreStatsService - [STORETPS] put_tps 0.16619301656944377 get_found_tps 0.04985790497083313 get_miss_tps 1.4126406408402719 get_transfered_tps 0.04985790497083313
+2020-04-02 23:09:10 INFO StoreStatsService - [PAGECACHERT] TotalPut 10, PutMessageDistributeTime [<=0ms]:9 [0~10ms]:1 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 23:10:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:10:10 INFO StoreStatsService - [STORETPS] put_tps 0.04986453468078387 get_found_tps 0.01662151156026129 get_miss_tps 0.8643186011335872 get_transfered_tps 0.03324302312052258
+2020-04-02 23:10:10 INFO StoreStatsService - [PAGECACHERT] TotalPut 3, PutMessageDistributeTime [<=0ms]:2 [0~10ms]:1 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 23:11:05 WARN AdminBrokerThread_15 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:11:17 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:11:17 INFO StoreStatsService - [STORETPS] put_tps 0.031195732423804422 get_found_tps 0.010398577474601474 get_miss_tps 0.9150748177649297 get_transfered_tps 0.010398577474601474
+2020-04-02 23:11:17 INFO StoreStatsService - [PAGECACHERT] TotalPut 3, PutMessageDistributeTime [<=0ms]:1 [0~10ms]:2 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 23:11:17 WARN AdminBrokerThread_1 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:12:39 INFO StoreStatsService - [STORETPS] put_tps 0.01698254194687861 get_found_tps 0.005660847315626203 get_miss_tps 0.5094762584063582 get_transfered_tps 0.005660847315626203
+2020-04-02 23:12:39 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 23:13:35 WARN AdminBrokerThread_3 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:13:35 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:13:35 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:13:35 WARN AdminBrokerThread_3 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:13:35 WARN AdminBrokerThread_5 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:13:35 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:13:39 INFO StoreStatsService - [STORETPS] put_tps 0.02158344808533232 get_found_tps 0.004316689617066463 get_miss_tps 0.39281875515304826 get_transfered_tps 0.004316689617066463
+2020-04-02 23:13:39 INFO StoreStatsService - [PAGECACHERT] TotalPut 2, PutMessageDistributeTime [<=0ms]:2 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 23:14:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:14:22 WARN AdminBrokerThread_5 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:14:39 INFO StoreStatsService - [STORETPS] put_tps 0.09968764537781619 get_found_tps 0.04984382268890809 get_miss_tps 1.4288562504153652 get_transfered_tps 0.06645843025187745
+2020-04-02 23:14:39 INFO StoreStatsService - [PAGECACHERT] TotalPut 6, PutMessageDistributeTime [<=0ms]:6 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 23:15:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:15:39 INFO StoreStatsService - [STORETPS] put_tps 0.06644076805527871 get_found_tps 0.016610192013819677 get_miss_tps 1.1959338249950169 get_transfered_tps 0.016610192013819677
+2020-04-02 23:15:39 INFO StoreStatsService - [PAGECACHERT] TotalPut 4, PutMessageDistributeTime [<=0ms]:2 [0~10ms]:2 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2020-04-02 23:16:00 WARN AdminBrokerThread_7 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2020-04-02 23:16:07 INFO HAClient - HAClient service end
+2020-04-02 23:16:07 INFO GroupTransferService - GroupTransferService service end
+2020-04-02 23:16:07 INFO StoreStatsService - StoreStatsService service end
+2020-04-02 23:16:07 INFO FlushRealTimeService - FlushRealTimeService service shutdown, retry 1 times OK
+2020-04-02 23:16:07 INFO FlushRealTimeService - FlushRealTimeService service end
+2020-04-02 23:16:07 INFO ReputMessageService - ReputMessageService service end
+2020-04-02 23:16:07 INFO FlushConsumeQueueService - FlushConsumeQueueService service end
+2020-04-02 23:16:07 WARN AllocateMappedFileService - AllocateMappedFileService interrupted, possibly by shutdown.
+2020-04-02 23:16:07 INFO AllocateMappedFileService - AllocateMappedFileService service end
+2020-04-02 23:16:07 INFO ShutdownHook - /Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self/store/abort delete OK
+2020-04-02 23:16:07 WARN TransactionalMessageCheckService - message store has shutdown, so getMessage is forbidden

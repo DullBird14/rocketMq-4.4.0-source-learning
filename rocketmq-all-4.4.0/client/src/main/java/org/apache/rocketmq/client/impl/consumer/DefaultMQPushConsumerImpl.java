@@ -330,7 +330,7 @@ public class DefaultMQPushConsumerImpl implements MQConsumerInner {
                         case FOUND:
                             // 如果找到的话，
                             long prevRequestOffset = pullRequest.getNextOffset();
-                            // 设置下一个消费位置
+                            // 设置下一个消费位置，注意此时还没消费，但是消费位置已经被修改。
                             pullRequest.setNextOffset(pullResult.getNextBeginOffset());
                             // 统计
                             long pullRT = System.currentTimeMillis() - beginTimestamp;
@@ -351,7 +351,7 @@ public class DefaultMQPushConsumerImpl implements MQConsumerInner {
                                     pullRequest.getMessageQueue().getTopic(), pullResult.getMsgFoundList().size());
                                 // 将消息放入到 processQueue
                                 boolean dispatchToConsume = processQueue.putMessage(pullResult.getMsgFoundList());
-                                // 提交到消息到消费者消费，异步消费
+                                // 提交到消息到消费者消费，异步消费，所以有可能导致并发消费。
                                 DefaultMQPushConsumerImpl.this.consumeMessageService.submitConsumeRequest(
                                     pullResult.getMsgFoundList(),
                                     processQueue,
@@ -622,6 +622,7 @@ public class DefaultMQPushConsumerImpl implements MQConsumerInner {
                 // 检查配置
                 this.checkConfig();
                 // 从 DefaultMQPushConsumer 复制配置 ，包括队列订阅信息，消息处理器，
+                //todo 重要。构建了重试队列
                 this.copySubscription();
                 // 如果是集群模式，设置pid
                 if (this.defaultMQPushConsumer.getMessageModel() == MessageModel.CLUSTERING) {
