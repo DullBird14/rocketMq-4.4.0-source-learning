@@ -1,8 +1,0 @@
-/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/namesrv/src/main/java/org/apache/rocketmq/namesrv/processor/DefaultRequestProcessor.java
-/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/namesrv/src/main/java/org/apache/rocketmq/namesrv/routeinfo/BrokerHousekeepingService.java
-/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/namesrv/src/main/java/org/apache/rocketmq/namesrv/kvconfig/KVConfigManager.java
-/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/namesrv/src/main/java/org/apache/rocketmq/namesrv/routeinfo/RouteInfoManager.java
-/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/namesrv/src/main/java/org/apache/rocketmq/namesrv/NamesrvStartup.java
-/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/namesrv/src/main/java/org/apache/rocketmq/namesrv/processor/ClusterTestRequestProcessor.java
-/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/namesrv/src/main/java/org/apache/rocketmq/namesrv/kvconfig/KVConfigSerializeWrapper.java
-/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/namesrv/src/main/java/org/apache/rocketmq/namesrv/NamesrvController.java
