@@ -10,8 +10,8 @@ import org.apache.rocketmq.remoting.exception.RemotingException;
 
 import java.util.List;
 
-import static main.java.org.dullbird.demo.Constants.MY_GROUP;
-import static main.java.org.dullbird.demo.Constants.TOPIC;
+import static org.dullbird.demo.Constants.MY_GROUP;
+import static org.dullbird.demo.Constants.TOPIC;
 
 /**
  * @author dullBird

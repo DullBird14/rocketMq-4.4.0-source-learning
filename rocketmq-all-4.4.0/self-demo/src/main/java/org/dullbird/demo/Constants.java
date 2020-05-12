@@ -1,4 +1,4 @@
-package main.java.org.dullbird.demo;
+package org.dullbird.demo;
 
 /**
  * @author dullBird

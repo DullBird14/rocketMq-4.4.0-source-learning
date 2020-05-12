@@ -5067,3 +5067,1448 @@ java.io.IOException: Connection reset by peer
 2020-04-02 23:16:03 INFO FileWatchService - FileWatchService service end
 2020-04-02 23:16:03 INFO ShutdownHook - join thread FileWatchService eclipse time(ms) 1 90000
 2020-04-02 23:16:03 INFO ShutdownHook - shutdown hook done, consuming time total(ms): 8
+2020-05-06 14:09:42 INFO main - rocketmqHome=/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self
+2020-05-06 14:09:42 INFO main - kvConfigPath=/Users/user01/namesrv/kvConfig.json
+2020-05-06 14:09:42 INFO main - configStorePath=/Users/user01/namesrv/namesrv.properties
+2020-05-06 14:09:42 INFO main - productEnvName=center
+2020-05-06 14:09:42 INFO main - clusterTest=false
+2020-05-06 14:09:42 INFO main - orderMessageEnable=false
+2020-05-06 14:09:42 INFO main - listenPort=9876
+2020-05-06 14:09:42 INFO main - serverWorkerThreads=8
+2020-05-06 14:09:42 INFO main - serverCallbackExecutorThreads=0
+2020-05-06 14:09:42 INFO main - serverSelectorThreads=3
+2020-05-06 14:09:42 INFO main - serverOnewaySemaphoreValue=256
+2020-05-06 14:09:42 INFO main - serverAsyncSemaphoreValue=64
+2020-05-06 14:09:42 INFO main - serverChannelMaxIdleTimeSeconds=120
+2020-05-06 14:09:42 INFO main - serverSocketSndBufSize=65535
+2020-05-06 14:09:42 INFO main - serverSocketRcvBufSize=65535
+2020-05-06 14:09:42 INFO main - serverPooledByteBufAllocatorEnable=true
+2020-05-06 14:09:42 INFO main - useEpollNativeSelector=false
+2020-05-06 14:09:42 INFO main - Server is running in TLS permissive mode
+2020-05-06 14:09:42 INFO main - Tls config file doesn't exist, skip it
+2020-05-06 14:09:42 INFO main - Log the final used tls related configuration
+2020-05-06 14:09:42 INFO main - tls.test.mode.enable = true
+2020-05-06 14:09:42 INFO main - tls.server.need.client.auth = none
+2020-05-06 14:09:42 INFO main - tls.server.keyPath = null
+2020-05-06 14:09:42 INFO main - tls.server.keyPassword = null
+2020-05-06 14:09:42 INFO main - tls.server.certPath = null
+2020-05-06 14:09:42 INFO main - tls.server.authClient = false
+2020-05-06 14:09:42 INFO main - tls.server.trustCertPath = null
+2020-05-06 14:09:42 INFO main - tls.client.keyPath = null
+2020-05-06 14:09:42 INFO main - tls.client.keyPassword = null
+2020-05-06 14:09:42 INFO main - tls.client.certPath = null
+2020-05-06 14:09:42 INFO main - tls.client.authServer = false
+2020-05-06 14:09:42 INFO main - tls.client.trustCertPath = null
+2020-05-06 14:09:43 INFO main - Using OpenSSL provider
+2020-05-06 14:09:43 INFO main - SSLContext created for server
+2020-05-06 14:09:43 INFO NettyEventExecutor - NettyEventExecutor service started
+2020-05-06 14:09:43 INFO FileWatchService - FileWatchService service started
+2020-05-06 14:09:43 INFO main - The Name Server boot success. serializeType=JSON
+2020-05-06 14:10:43 INFO NSScheduledThread1 - --------------------------------------------------------
+2020-05-06 14:10:43 INFO NSScheduledThread1 - configTable SIZE: 0
+2020-05-06 14:10:59 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49350
+2020-05-06 14:10:59 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49350]
+2020-05-06 14:10:59 INFO RemotingExecutorThread_1 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-06 14:10:59 INFO RemotingExecutorThread_1 - new topic registered, testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-06 14:10:59 INFO RemotingExecutorThread_1 - new topic registered, test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-06 14:10:59 INFO RemotingExecutorThread_1 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2020-05-06 14:10:59 INFO RemotingExecutorThread_1 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-06 14:10:59 INFO RemotingExecutorThread_1 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2020-05-06 14:10:59 INFO RemotingExecutorThread_1 - new topic registered, TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2020-05-06 14:10:59 INFO RemotingExecutorThread_1 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-06 14:10:59 INFO RemotingExecutorThread_1 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2020-05-06 14:10:59 INFO RemotingExecutorThread_1 - new topic registered, %RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-06 14:10:59 INFO RemotingExecutorThread_1 - new broker registered, 169.254.84.154:10911 HAServer: 169.254.84.154:10912
+2020-05-06 14:14:40 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49406
+2020-05-06 14:14:40 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49406]
+2020-05-06 14:15:23 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49424
+2020-05-06 14:15:23 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49424]
+2020-05-06 14:15:23 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49424]
+2020-05-06 14:15:23 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49424]
+2020-05-06 14:15:23 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49427
+2020-05-06 14:15:23 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49427]
+2020-05-06 14:15:23 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49427]
+2020-05-06 14:15:23 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49427]
+2020-05-06 14:15:24 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49429
+2020-05-06 14:15:24 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49429]
+2020-05-06 14:15:24 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49429]
+2020-05-06 14:15:24 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49429]
+2020-05-06 14:15:24 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49431
+2020-05-06 14:15:24 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49431]
+2020-05-06 14:15:24 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49431]
+2020-05-06 14:15:24 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49431]
+2020-05-06 14:15:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49438
+2020-05-06 14:15:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49438]
+2020-05-06 14:15:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49438]
+2020-05-06 14:15:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49438]
+2020-05-06 14:15:34 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49442
+2020-05-06 14:15:34 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49442]
+2020-05-06 14:15:34 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49442]
+2020-05-06 14:15:34 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49442]
+2020-05-06 14:15:42 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49445
+2020-05-06 14:15:42 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49445]
+2020-05-06 14:15:42 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49445]
+2020-05-06 14:15:42 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49445]
+2020-05-06 14:15:56 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49451
+2020-05-06 14:15:56 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49451]
+2020-05-06 14:15:56 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49451]
+2020-05-06 14:15:56 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49451]
+2020-05-06 14:16:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49454
+2020-05-06 14:16:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49454]
+2020-05-06 14:16:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49454]
+2020-05-06 14:16:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49454]
+2020-05-06 14:16:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49460
+2020-05-06 14:16:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49460]
+2020-05-06 14:16:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49460]
+2020-05-06 14:16:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49460]
+2020-05-06 14:17:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49473
+2020-05-06 14:17:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49473]
+2020-05-06 14:17:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49473]
+2020-05-06 14:17:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49473]
+2020-05-06 14:17:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49475
+2020-05-06 14:17:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49475]
+2020-05-06 14:17:08 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49475]
+2020-05-06 14:17:08 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49475]
+2020-05-06 14:17:09 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49479
+2020-05-06 14:17:09 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49479]
+2020-05-06 14:17:17 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49479]
+2020-05-06 14:17:17 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49479]
+2020-05-06 14:17:18 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49484
+2020-05-06 14:17:18 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49484]
+2020-05-06 14:17:26 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49484]
+2020-05-06 14:17:26 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49484]
+2020-05-06 14:17:29 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49350]
+2020-05-06 14:17:29 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49350]
+2020-05-06 14:17:29 INFO NettyEventExecutor - the broker's channel destroyed, 169.254.84.154:10911, clean it's data structure at once
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove brokerAddr[0, 169.254.84.154:10911] from brokerAddrTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove brokerName[broker-a] from brokerAddrTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove brokerName[broker-a], clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove the clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed and no broker in this cluster
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[test_topic] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[broker-a] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[TBW102] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[%RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[%RETRY%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[testTopic] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[BenchmarkTest] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[DefaultCluster] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:17:29 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:17:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49490
+2020-05-06 14:17:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49490]
+2020-05-06 14:17:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49490]
+2020-05-06 14:17:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49490]
+2020-05-06 14:17:39 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49406]
+2020-05-06 14:17:39 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49406]
+2020-05-06 14:17:42 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49544
+2020-05-06 14:17:42 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49544]
+2020-05-06 14:17:42 INFO RemotingExecutorThread_4 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-06 14:17:42 INFO RemotingExecutorThread_4 - new topic registered, testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-06 14:17:42 INFO RemotingExecutorThread_4 - new topic registered, test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-06 14:17:42 INFO RemotingExecutorThread_4 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2020-05-06 14:17:42 INFO RemotingExecutorThread_4 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-06 14:17:42 INFO RemotingExecutorThread_4 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2020-05-06 14:17:42 INFO RemotingExecutorThread_4 - new topic registered, TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2020-05-06 14:17:42 INFO RemotingExecutorThread_4 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-06 14:17:42 INFO RemotingExecutorThread_4 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2020-05-06 14:17:42 INFO RemotingExecutorThread_4 - new topic registered, %RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-06 14:17:42 INFO RemotingExecutorThread_4 - new broker registered, 169.254.84.154:10911 HAServer: 169.254.84.154:10912
+2020-05-06 14:18:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49547
+2020-05-06 14:18:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49547]
+2020-05-06 14:18:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49547]
+2020-05-06 14:18:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49547]
+2020-05-06 14:18:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49549
+2020-05-06 14:18:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49549]
+2020-05-06 14:18:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49549]
+2020-05-06 14:18:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49549]
+2020-05-06 14:18:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49557
+2020-05-06 14:18:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49557]
+2020-05-06 14:18:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49557]
+2020-05-06 14:18:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49557]
+2020-05-06 14:19:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49623
+2020-05-06 14:19:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49623]
+2020-05-06 14:19:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49623]
+2020-05-06 14:19:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49623]
+2020-05-06 14:19:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49631
+2020-05-06 14:19:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49631]
+2020-05-06 14:19:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49631]
+2020-05-06 14:19:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49631]
+2020-05-06 14:20:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49639
+2020-05-06 14:20:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49639]
+2020-05-06 14:20:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49639]
+2020-05-06 14:20:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49639]
+2020-05-06 14:20:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49641
+2020-05-06 14:20:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49641]
+2020-05-06 14:20:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49641]
+2020-05-06 14:20:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49641]
+2020-05-06 14:20:19 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49651
+2020-05-06 14:20:19 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49651]
+2020-05-06 14:20:21 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49651]
+2020-05-06 14:20:21 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49651]
+2020-05-06 14:20:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49660
+2020-05-06 14:20:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49660]
+2020-05-06 14:20:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49660]
+2020-05-06 14:20:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49660]
+2020-05-06 14:20:31 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49664
+2020-05-06 14:20:31 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49664]
+2020-05-06 14:20:39 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49664]
+2020-05-06 14:20:39 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49664]
+2020-05-06 14:20:44 INFO NSScheduledThread1 - --------------------------------------------------------
+2020-05-06 14:20:44 INFO NSScheduledThread1 - configTable SIZE: 0
+2020-05-06 14:20:56 INFO RemotingExecutorThread_3 - new topic registered, %DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=2, topicSynFlag=0]
+2020-05-06 14:21:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49673
+2020-05-06 14:21:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49673]
+2020-05-06 14:21:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49673]
+2020-05-06 14:21:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49673]
+2020-05-06 14:21:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49675
+2020-05-06 14:21:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49675]
+2020-05-06 14:21:05 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49675]
+2020-05-06 14:21:05 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49675]
+2020-05-06 14:21:06 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49679
+2020-05-06 14:21:06 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49679]
+2020-05-06 14:21:14 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49679]
+2020-05-06 14:21:14 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49679]
+2020-05-06 14:21:15 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49683
+2020-05-06 14:21:15 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49683]
+2020-05-06 14:21:23 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49683]
+2020-05-06 14:21:23 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49683]
+2020-05-06 14:21:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49690
+2020-05-06 14:21:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49690]
+2020-05-06 14:21:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49690]
+2020-05-06 14:21:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49690]
+2020-05-06 14:21:39 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49695
+2020-05-06 14:21:39 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49695]
+2020-05-06 14:21:39 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49695]
+2020-05-06 14:21:39 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49695]
+2020-05-06 14:21:42 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49697
+2020-05-06 14:21:42 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49697]
+2020-05-06 14:21:42 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49697]
+2020-05-06 14:21:42 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49697]
+2020-05-06 14:22:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49706
+2020-05-06 14:22:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49706]
+2020-05-06 14:22:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49706]
+2020-05-06 14:22:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49706]
+2020-05-06 14:22:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49726
+2020-05-06 14:22:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49726]
+2020-05-06 14:22:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49726]
+2020-05-06 14:22:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49726]
+2020-05-06 14:23:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49745
+2020-05-06 14:23:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49745]
+2020-05-06 14:23:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49745]
+2020-05-06 14:23:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49745]
+2020-05-06 14:23:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49751
+2020-05-06 14:23:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49751]
+2020-05-06 14:23:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49751]
+2020-05-06 14:23:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49751]
+2020-05-06 14:24:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49764
+2020-05-06 14:24:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49764]
+2020-05-06 14:24:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49764]
+2020-05-06 14:24:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49764]
+2020-05-06 14:24:09 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49768
+2020-05-06 14:24:09 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49768]
+2020-05-06 14:24:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49777
+2020-05-06 14:24:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49777]
+2020-05-06 14:24:32 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49777]
+2020-05-06 14:24:32 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49777]
+2020-05-06 14:24:39 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49768]
+2020-05-06 14:24:39 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49768]
+2020-05-06 14:24:53 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49790
+2020-05-06 14:24:53 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49790]
+2020-05-06 14:25:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49794
+2020-05-06 14:25:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49794]
+2020-05-06 14:25:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49794]
+2020-05-06 14:25:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49794]
+2020-05-06 14:25:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49863
+2020-05-06 14:25:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49863]
+2020-05-06 14:25:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49863]
+2020-05-06 14:25:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49863]
+2020-05-06 14:26:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49912
+2020-05-06 14:26:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49912]
+2020-05-06 14:26:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49912]
+2020-05-06 14:26:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49912]
+2020-05-06 14:26:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49921
+2020-05-06 14:26:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49921]
+2020-05-06 14:26:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49921]
+2020-05-06 14:26:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49921]
+2020-05-06 14:27:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49931
+2020-05-06 14:27:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49931]
+2020-05-06 14:27:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49931]
+2020-05-06 14:27:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49931]
+2020-05-06 14:27:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49939
+2020-05-06 14:27:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49939]
+2020-05-06 14:27:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49939]
+2020-05-06 14:27:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49939]
+2020-05-06 14:28:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49948
+2020-05-06 14:28:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49948]
+2020-05-06 14:28:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49948]
+2020-05-06 14:28:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49948]
+2020-05-06 14:28:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49950
+2020-05-06 14:28:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49950]
+2020-05-06 14:28:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49950]
+2020-05-06 14:28:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49950]
+2020-05-06 14:28:03 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49790]
+2020-05-06 14:28:03 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49790]
+2020-05-06 14:28:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49959
+2020-05-06 14:28:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49959]
+2020-05-06 14:28:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49959]
+2020-05-06 14:28:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49959]
+2020-05-06 14:28:54 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49971
+2020-05-06 14:28:54 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49971]
+2020-05-06 14:29:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:49974
+2020-05-06 14:29:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:49974]
+2020-05-06 14:29:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49974]
+2020-05-06 14:29:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49974]
+2020-05-06 14:29:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50026
+2020-05-06 14:29:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50026]
+2020-05-06 14:29:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50026]
+2020-05-06 14:29:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50026]
+2020-05-06 14:30:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50036
+2020-05-06 14:30:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50036]
+2020-05-06 14:30:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50036]
+2020-05-06 14:30:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50036]
+2020-05-06 14:30:11 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50041
+2020-05-06 14:30:11 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50041]
+2020-05-06 14:30:11 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50041]
+2020-05-06 14:30:11 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50041]
+2020-05-06 14:30:14 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50042
+2020-05-06 14:30:14 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50042]
+2020-05-06 14:30:14 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50042]
+2020-05-06 14:30:14 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50042]
+2020-05-06 14:30:20 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50044
+2020-05-06 14:30:20 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50044]
+2020-05-06 14:30:20 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50044]
+2020-05-06 14:30:20 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50044]
+2020-05-06 14:30:25 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50048
+2020-05-06 14:30:25 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50048]
+2020-05-06 14:30:25 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50048]
+2020-05-06 14:30:25 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50048]
+2020-05-06 14:30:29 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50051
+2020-05-06 14:30:29 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50051]
+2020-05-06 14:30:29 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50051]
+2020-05-06 14:30:29 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50051]
+2020-05-06 14:30:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50052
+2020-05-06 14:30:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50052]
+2020-05-06 14:30:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50052]
+2020-05-06 14:30:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50052]
+2020-05-06 14:30:35 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50055
+2020-05-06 14:30:35 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50055]
+2020-05-06 14:30:35 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50055]
+2020-05-06 14:30:35 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50055]
+2020-05-06 14:30:38 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50061
+2020-05-06 14:30:38 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50061]
+2020-05-06 14:30:38 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50061]
+2020-05-06 14:30:38 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50061]
+2020-05-06 14:30:44 INFO NSScheduledThread1 - --------------------------------------------------------
+2020-05-06 14:30:44 INFO NSScheduledThread1 - configTable SIZE: 0
+2020-05-06 14:31:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50110
+2020-05-06 14:31:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50110]
+2020-05-06 14:31:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50110]
+2020-05-06 14:31:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50110]
+2020-05-06 14:31:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50119
+2020-05-06 14:31:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50119]
+2020-05-06 14:31:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50119]
+2020-05-06 14:31:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50119]
+2020-05-06 14:32:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50153
+2020-05-06 14:32:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50153]
+2020-05-06 14:32:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50153]
+2020-05-06 14:32:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50153]
+2020-05-06 14:32:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50163
+2020-05-06 14:32:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50163]
+2020-05-06 14:32:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50163]
+2020-05-06 14:32:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50163]
+2020-05-06 14:33:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50171
+2020-05-06 14:33:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50171]
+2020-05-06 14:33:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50171]
+2020-05-06 14:33:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50171]
+2020-05-06 14:33:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50177
+2020-05-06 14:33:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50177]
+2020-05-06 14:33:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50177]
+2020-05-06 14:33:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50177]
+2020-05-06 14:34:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50185
+2020-05-06 14:34:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50185]
+2020-05-06 14:34:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50185]
+2020-05-06 14:34:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50185]
+2020-05-06 14:34:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50195
+2020-05-06 14:34:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50195]
+2020-05-06 14:34:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50195]
+2020-05-06 14:34:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50195]
+2020-05-06 14:35:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50203
+2020-05-06 14:35:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50203]
+2020-05-06 14:35:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50203]
+2020-05-06 14:35:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50203]
+2020-05-06 14:35:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50211
+2020-05-06 14:35:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50211]
+2020-05-06 14:35:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50211]
+2020-05-06 14:35:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50211]
+2020-05-06 14:36:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50220
+2020-05-06 14:36:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50220]
+2020-05-06 14:36:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50220]
+2020-05-06 14:36:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50220]
+2020-05-06 14:36:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50236
+2020-05-06 14:36:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50236]
+2020-05-06 14:36:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50236]
+2020-05-06 14:36:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50236]
+2020-05-06 14:37:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50326
+2020-05-06 14:37:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50326]
+2020-05-06 14:37:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50326]
+2020-05-06 14:37:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50326]
+2020-05-06 14:37:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50339
+2020-05-06 14:37:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50339]
+2020-05-06 14:37:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50339]
+2020-05-06 14:37:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50339]
+2020-05-06 14:38:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50352
+2020-05-06 14:38:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50352]
+2020-05-06 14:38:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50352]
+2020-05-06 14:38:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50352]
+2020-05-06 14:38:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50359
+2020-05-06 14:38:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50359]
+2020-05-06 14:38:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50359]
+2020-05-06 14:38:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50359]
+2020-05-06 14:39:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50369
+2020-05-06 14:39:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50369]
+2020-05-06 14:39:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50369]
+2020-05-06 14:39:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50369]
+2020-05-06 14:39:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50376
+2020-05-06 14:39:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50376]
+2020-05-06 14:39:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50376]
+2020-05-06 14:39:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50376]
+2020-05-06 14:40:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50388
+2020-05-06 14:40:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50388]
+2020-05-06 14:40:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50388]
+2020-05-06 14:40:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50388]
+2020-05-06 14:40:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50397
+2020-05-06 14:40:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50397]
+2020-05-06 14:40:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50397]
+2020-05-06 14:40:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50397]
+2020-05-06 14:40:44 INFO NSScheduledThread1 - --------------------------------------------------------
+2020-05-06 14:40:44 INFO NSScheduledThread1 - configTable SIZE: 0
+2020-05-06 14:41:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50405
+2020-05-06 14:41:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50405]
+2020-05-06 14:41:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50405]
+2020-05-06 14:41:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50405]
+2020-05-06 14:41:21 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50412
+2020-05-06 14:41:21 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50412]
+2020-05-06 14:41:22 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50412]
+2020-05-06 14:41:22 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50412]
+2020-05-06 14:41:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50415
+2020-05-06 14:41:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50415]
+2020-05-06 14:41:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50415]
+2020-05-06 14:41:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50415]
+2020-05-06 14:42:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50458
+2020-05-06 14:42:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50458]
+2020-05-06 14:42:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50458]
+2020-05-06 14:42:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50458]
+2020-05-06 14:42:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50464
+2020-05-06 14:42:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50464]
+2020-05-06 14:42:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50464]
+2020-05-06 14:42:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50464]
+2020-05-06 14:43:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50491
+2020-05-06 14:43:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50491]
+2020-05-06 14:43:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50491]
+2020-05-06 14:43:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50491]
+2020-05-06 14:43:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50503
+2020-05-06 14:43:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50503]
+2020-05-06 14:43:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50503]
+2020-05-06 14:43:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50503]
+2020-05-06 14:44:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50511
+2020-05-06 14:44:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50511]
+2020-05-06 14:44:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50511]
+2020-05-06 14:44:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50511]
+2020-05-06 14:44:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50525
+2020-05-06 14:44:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50525]
+2020-05-06 14:44:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50525]
+2020-05-06 14:44:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50525]
+2020-05-06 14:45:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50535
+2020-05-06 14:45:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50535]
+2020-05-06 14:45:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50535]
+2020-05-06 14:45:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50535]
+2020-05-06 14:45:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50542
+2020-05-06 14:45:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50542]
+2020-05-06 14:45:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50542]
+2020-05-06 14:45:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50542]
+2020-05-06 14:46:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50551
+2020-05-06 14:46:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50551]
+2020-05-06 14:46:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50551]
+2020-05-06 14:46:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50551]
+2020-05-06 14:46:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50558
+2020-05-06 14:46:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50558]
+2020-05-06 14:46:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50558]
+2020-05-06 14:46:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50558]
+2020-05-06 14:47:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50576
+2020-05-06 14:47:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50576]
+2020-05-06 14:47:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50576]
+2020-05-06 14:47:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50576]
+2020-05-06 14:47:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50625
+2020-05-06 14:47:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50625]
+2020-05-06 14:47:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50625]
+2020-05-06 14:47:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50625]
+2020-05-06 14:48:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50636
+2020-05-06 14:48:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50636]
+2020-05-06 14:48:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50636]
+2020-05-06 14:48:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50636]
+2020-05-06 14:48:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50645
+2020-05-06 14:48:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50645]
+2020-05-06 14:48:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50645]
+2020-05-06 14:48:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50645]
+2020-05-06 14:49:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50652
+2020-05-06 14:49:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50652]
+2020-05-06 14:49:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50652]
+2020-05-06 14:49:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50652]
+2020-05-06 14:49:19 INFO RemotingExecutorThread_8 - topic changed, %DLQ%myGroup OLD: QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=2, topicSynFlag=0] NEW: QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]
+2020-05-06 14:49:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50663
+2020-05-06 14:49:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50663]
+2020-05-06 14:49:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50663]
+2020-05-06 14:49:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50663]
+2020-05-06 14:50:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50673
+2020-05-06 14:50:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50673]
+2020-05-06 14:50:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50673]
+2020-05-06 14:50:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50673]
+2020-05-06 14:50:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50693
+2020-05-06 14:50:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50693]
+2020-05-06 14:50:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50693]
+2020-05-06 14:50:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50693]
+2020-05-06 14:50:44 INFO NSScheduledThread1 - --------------------------------------------------------
+2020-05-06 14:50:44 INFO NSScheduledThread1 - configTable SIZE: 0
+2020-05-06 14:51:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50705
+2020-05-06 14:51:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50705]
+2020-05-06 14:51:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50705]
+2020-05-06 14:51:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50705]
+2020-05-06 14:51:24 WARN NettyServerCodecThread_5 - NETTY SERVER PIPELINE: IDLE exception [127.0.0.1:49971]
+2020-05-06 14:51:24 INFO NettyServerNIOSelector_3_2 - closeChannel: close the connection to remote address[127.0.0.1:49971] result: true
+2020-05-06 14:51:24 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49971]
+2020-05-06 14:51:24 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49971]
+2020-05-06 14:51:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50711
+2020-05-06 14:51:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50711]
+2020-05-06 14:51:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50711]
+2020-05-06 14:51:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50711]
+2020-05-06 14:52:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50724
+2020-05-06 14:52:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50724]
+2020-05-06 14:52:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50724]
+2020-05-06 14:52:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50724]
+2020-05-06 14:52:26 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50737
+2020-05-06 14:52:26 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50737]
+2020-05-06 14:52:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50741
+2020-05-06 14:52:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50741]
+2020-05-06 14:52:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50741]
+2020-05-06 14:52:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50741]
+2020-05-06 14:52:52 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50769
+2020-05-06 14:52:52 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50769]
+2020-05-06 14:52:52 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50769]
+2020-05-06 14:52:52 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50769]
+2020-05-06 14:52:54 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50773
+2020-05-06 14:52:54 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50773]
+2020-05-06 14:52:54 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50773]
+2020-05-06 14:52:54 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50773]
+2020-05-06 14:52:57 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50775
+2020-05-06 14:52:57 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50775]
+2020-05-06 14:52:57 INFO RemotingExecutorThread_4 - new topic registered, %RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-06 14:52:57 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50775]
+2020-05-06 14:52:57 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50775]
+2020-05-06 14:53:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50778
+2020-05-06 14:53:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50778]
+2020-05-06 14:53:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50778]
+2020-05-06 14:53:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50778]
+2020-05-06 14:53:02 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50781
+2020-05-06 14:53:02 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50781]
+2020-05-06 14:53:02 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50781]
+2020-05-06 14:53:02 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50781]
+2020-05-06 14:53:02 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50784
+2020-05-06 14:53:02 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50784]
+2020-05-06 14:53:02 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50784]
+2020-05-06 14:53:02 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50784]
+2020-05-06 14:53:06 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50789
+2020-05-06 14:53:06 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50789]
+2020-05-06 14:53:06 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50789]
+2020-05-06 14:53:06 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50789]
+2020-05-06 14:53:06 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50792
+2020-05-06 14:53:06 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50792]
+2020-05-06 14:53:06 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50792]
+2020-05-06 14:53:06 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50792]
+2020-05-06 14:53:13 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50796
+2020-05-06 14:53:13 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50796]
+2020-05-06 14:53:13 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50796]
+2020-05-06 14:53:13 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50796]
+2020-05-06 14:53:13 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50799
+2020-05-06 14:53:13 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50799]
+2020-05-06 14:53:13 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50799]
+2020-05-06 14:53:13 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50799]
+2020-05-06 14:53:17 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50803
+2020-05-06 14:53:17 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50803]
+2020-05-06 14:53:17 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50803]
+2020-05-06 14:53:17 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50803]
+2020-05-06 14:53:17 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50806
+2020-05-06 14:53:17 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50806]
+2020-05-06 14:53:17 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50806]
+2020-05-06 14:53:17 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50806]
+2020-05-06 14:53:19 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50810
+2020-05-06 14:53:19 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50810]
+2020-05-06 14:53:19 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50810]
+2020-05-06 14:53:19 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50810]
+2020-05-06 14:53:19 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50813
+2020-05-06 14:53:19 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50813]
+2020-05-06 14:53:19 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50813]
+2020-05-06 14:53:19 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50813]
+2020-05-06 14:53:21 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50815
+2020-05-06 14:53:21 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50815]
+2020-05-06 14:53:21 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50815]
+2020-05-06 14:53:21 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50815]
+2020-05-06 14:53:21 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50818
+2020-05-06 14:53:21 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50818]
+2020-05-06 14:53:21 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50818]
+2020-05-06 14:53:21 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50818]
+2020-05-06 14:53:27 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50823
+2020-05-06 14:53:27 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50823]
+2020-05-06 14:53:27 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50823]
+2020-05-06 14:53:27 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50823]
+2020-05-06 14:53:27 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50826
+2020-05-06 14:53:27 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50826]
+2020-05-06 14:53:27 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50826]
+2020-05-06 14:53:27 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50826]
+2020-05-06 14:53:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50830
+2020-05-06 14:53:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50830]
+2020-05-06 14:53:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50830]
+2020-05-06 14:53:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50830]
+2020-05-06 14:53:32 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50833
+2020-05-06 14:53:32 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50833]
+2020-05-06 14:53:32 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50833]
+2020-05-06 14:53:32 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50833]
+2020-05-06 14:53:36 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50836
+2020-05-06 14:53:36 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50836]
+2020-05-06 14:53:36 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50836]
+2020-05-06 14:53:36 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50836]
+2020-05-06 14:53:36 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50839
+2020-05-06 14:53:36 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50839]
+2020-05-06 14:53:36 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50839]
+2020-05-06 14:53:36 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50839]
+2020-05-06 14:53:36 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50845
+2020-05-06 14:53:36 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50845]
+2020-05-06 14:53:36 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50845]
+2020-05-06 14:53:36 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50845]
+2020-05-06 14:53:36 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50848
+2020-05-06 14:53:36 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50848]
+2020-05-06 14:53:36 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50848]
+2020-05-06 14:53:36 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50848]
+2020-05-06 14:53:37 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50851
+2020-05-06 14:53:37 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50851]
+2020-05-06 14:53:37 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50851]
+2020-05-06 14:53:37 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50851]
+2020-05-06 14:53:38 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50855
+2020-05-06 14:53:38 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50855]
+2020-05-06 14:53:38 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50855]
+2020-05-06 14:53:38 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50855]
+2020-05-06 14:53:39 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50859
+2020-05-06 14:53:39 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50859]
+2020-05-06 14:53:39 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50859]
+2020-05-06 14:53:39 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50859]
+2020-05-06 14:53:39 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50862
+2020-05-06 14:53:39 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50862]
+2020-05-06 14:53:39 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50862]
+2020-05-06 14:53:39 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50862]
+2020-05-06 14:53:45 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50864
+2020-05-06 14:53:45 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50864]
+2020-05-06 14:53:45 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50864]
+2020-05-06 14:53:45 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50864]
+2020-05-06 14:54:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50874
+2020-05-06 14:54:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50874]
+2020-05-06 14:54:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50874]
+2020-05-06 14:54:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50874]
+2020-05-06 14:54:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:50890
+2020-05-06 14:54:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:50890]
+2020-05-06 14:54:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50890]
+2020-05-06 14:54:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50890]
+2020-05-06 14:54:43 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:50737]
+2020-05-06 14:54:43 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:50737]
+2020-05-06 14:55:46 INFO ShutdownHook - shutdown hook was invoked, 1 times.
+2020-05-06 14:55:46 INFO ShutdownHook - shutdown thread NettyEventExecutor interrupt false
+2020-05-06 14:55:46 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:49544]
+2020-05-06 14:55:46 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:49544]
+2020-05-06 14:55:46 INFO NettyEventExecutor - the broker's channel destroyed, 169.254.84.154:10911, clean it's data structure at once
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove brokerAddr[0, 169.254.84.154:10911] from brokerAddrTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove brokerName[broker-a] from brokerAddrTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove brokerName[broker-a], clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove the clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed and no broker in this cluster
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[test_topic] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[broker-a] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[TBW102] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[%RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[%RETRY%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[testTopic] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[BenchmarkTest] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[DefaultCluster] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[%DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - remove topic[%DLQ%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-06 14:55:46 INFO NettyEventExecutor - NettyEventExecutor service end
+2020-05-06 14:55:46 INFO ShutdownHook - join thread NettyEventExecutor eclipse time(ms) 0 90000
+2020-05-06 14:55:46 INFO ShutdownHook - shutdown thread FileWatchService interrupt false
+2020-05-06 14:55:46 INFO FileWatchService - FileWatchService service end
+2020-05-06 14:55:46 INFO ShutdownHook - join thread FileWatchService eclipse time(ms) 1 90000
+2020-05-06 14:55:46 INFO ShutdownHook - shutdown hook done, consuming time total(ms): 5
+2020-05-11 20:04:38 INFO main - rocketmqHome=/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self
+2020-05-11 20:04:38 INFO main - kvConfigPath=/Users/user01/namesrv/kvConfig.json
+2020-05-11 20:04:38 INFO main - configStorePath=/Users/user01/namesrv/namesrv.properties
+2020-05-11 20:04:38 INFO main - productEnvName=center
+2020-05-11 20:04:38 INFO main - clusterTest=false
+2020-05-11 20:04:38 INFO main - orderMessageEnable=false
+2020-05-11 20:04:38 INFO main - listenPort=9876
+2020-05-11 20:04:38 INFO main - serverWorkerThreads=8
+2020-05-11 20:04:38 INFO main - serverCallbackExecutorThreads=0
+2020-05-11 20:04:38 INFO main - serverSelectorThreads=3
+2020-05-11 20:04:38 INFO main - serverOnewaySemaphoreValue=256
+2020-05-11 20:04:38 INFO main - serverAsyncSemaphoreValue=64
+2020-05-11 20:04:38 INFO main - serverChannelMaxIdleTimeSeconds=120
+2020-05-11 20:04:38 INFO main - serverSocketSndBufSize=65535
+2020-05-11 20:04:38 INFO main - serverSocketRcvBufSize=65535
+2020-05-11 20:04:38 INFO main - serverPooledByteBufAllocatorEnable=true
+2020-05-11 20:04:38 INFO main - useEpollNativeSelector=false
+2020-05-11 20:04:39 INFO main - Server is running in TLS permissive mode
+2020-05-11 20:04:39 INFO main - Tls config file doesn't exist, skip it
+2020-05-11 20:04:39 INFO main - Log the final used tls related configuration
+2020-05-11 20:04:39 INFO main - tls.test.mode.enable = true
+2020-05-11 20:04:39 INFO main - tls.server.need.client.auth = none
+2020-05-11 20:04:39 INFO main - tls.server.keyPath = null
+2020-05-11 20:04:39 INFO main - tls.server.keyPassword = null
+2020-05-11 20:04:39 INFO main - tls.server.certPath = null
+2020-05-11 20:04:39 INFO main - tls.server.authClient = false
+2020-05-11 20:04:39 INFO main - tls.server.trustCertPath = null
+2020-05-11 20:04:39 INFO main - tls.client.keyPath = null
+2020-05-11 20:04:39 INFO main - tls.client.keyPassword = null
+2020-05-11 20:04:39 INFO main - tls.client.certPath = null
+2020-05-11 20:04:39 INFO main - tls.client.authServer = false
+2020-05-11 20:04:39 INFO main - tls.client.trustCertPath = null
+2020-05-11 20:04:39 INFO main - Using OpenSSL provider
+2020-05-11 20:04:40 INFO main - SSLContext created for server
+2020-05-11 20:04:40 INFO NettyEventExecutor - NettyEventExecutor service started
+2020-05-11 20:04:40 INFO FileWatchService - FileWatchService service started
+2020-05-11 20:04:40 INFO main - The Name Server boot success. serializeType=JSON
+2020-05-11 20:04:51 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:52068
+2020-05-11 20:04:51 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:52068]
+2020-05-11 20:04:51 INFO RemotingExecutorThread_1 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:04:51 INFO RemotingExecutorThread_1 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2020-05-11 20:04:51 INFO RemotingExecutorThread_1 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:04:51 INFO RemotingExecutorThread_1 - new topic registered, TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2020-05-11 20:04:51 INFO RemotingExecutorThread_1 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:04:51 INFO RemotingExecutorThread_1 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2020-05-11 20:04:51 INFO RemotingExecutorThread_1 - new topic registered, testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 20:04:51 INFO RemotingExecutorThread_1 - new topic registered, test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 20:04:51 INFO RemotingExecutorThread_1 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2020-05-11 20:04:51 INFO RemotingExecutorThread_1 - new topic registered, %RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:04:51 INFO RemotingExecutorThread_1 - new topic registered, %DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]
+2020-05-11 20:04:51 INFO RemotingExecutorThread_1 - new topic registered, %RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:04:51 INFO RemotingExecutorThread_1 - new broker registered, 169.254.36.170:10911 HAServer: 169.254.36.170:10912
+2020-05-11 20:05:40 INFO NSScheduledThread1 - --------------------------------------------------------
+2020-05-11 20:05:40 INFO NSScheduledThread1 - configTable SIZE: 0
+2020-05-11 20:09:36 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:52137
+2020-05-11 20:09:36 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:52137]
+2020-05-11 20:09:46 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:52137]
+2020-05-11 20:09:46 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:52137]
+2020-05-11 20:10:33 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:52157
+2020-05-11 20:10:33 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:52157]
+2020-05-11 20:10:33 INFO RemotingExecutorThread_4 - new topic registered, noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]
+2020-05-11 20:12:29 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:52157]
+2020-05-11 20:12:29 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:52157]
+2020-05-11 20:12:39 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:52178
+2020-05-11 20:12:39 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:52178]
+2020-05-11 20:13:42 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:52178]
+2020-05-11 20:13:42 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:52178]
+2020-05-11 20:13:51 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:52196
+2020-05-11 20:13:51 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:52196]
+2020-05-11 20:15:40 INFO NSScheduledThread1 - --------------------------------------------------------
+2020-05-11 20:15:40 INFO NSScheduledThread1 - configTable SIZE: 0
+2020-05-11 20:16:30 WARN NettyServerCodecThread_1 - NETTY SERVER PIPELINE: IDLE exception [127.0.0.1:52068]
+2020-05-11 20:16:30 INFO NettyEventExecutor - the broker's channel destroyed, 169.254.36.170:10911, clean it's data structure at once
+2020-05-11 20:16:30 INFO NettyServerNIOSelector_3_1 - closeChannel: close the connection to remote address[127.0.0.1:52068] result: true
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove brokerAddr[0, 169.254.36.170:10911] from brokerAddrTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove brokerName[broker-a] from brokerAddrTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove brokerName[broker-a], clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove the clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed and no broker in this cluster
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[test_topic] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[broker-a] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[noSuchTopic8] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[TBW102] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[%RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:52068]
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[%RETRY%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[testTopic] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:52068]
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[BenchmarkTest] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[DefaultCluster] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[%DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:16:30 INFO NettyEventExecutor - remove topic[%DLQ%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:19:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:52252
+2020-05-11 20:19:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:52252]
+2020-05-11 20:19:13 INFO RemotingExecutorThread_8 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:19:13 INFO RemotingExecutorThread_8 - new topic registered, noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]
+2020-05-11 20:19:13 INFO RemotingExecutorThread_8 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2020-05-11 20:19:13 INFO RemotingExecutorThread_8 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:19:13 INFO RemotingExecutorThread_8 - new topic registered, TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2020-05-11 20:19:13 INFO RemotingExecutorThread_8 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:19:13 INFO RemotingExecutorThread_8 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2020-05-11 20:19:13 INFO RemotingExecutorThread_8 - new topic registered, testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 20:19:13 INFO RemotingExecutorThread_8 - new topic registered, test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 20:19:13 INFO RemotingExecutorThread_8 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2020-05-11 20:19:13 INFO RemotingExecutorThread_8 - new topic registered, %RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:19:13 INFO RemotingExecutorThread_8 - new topic registered, %DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]
+2020-05-11 20:19:13 INFO RemotingExecutorThread_8 - new topic registered, %RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:19:13 INFO RemotingExecutorThread_8 - new broker registered, 169.254.36.170:10911 HAServer: 169.254.36.170:10912
+2020-05-11 20:25:40 INFO NSScheduledThread1 - --------------------------------------------------------
+2020-05-11 20:25:40 INFO NSScheduledThread1 - configTable SIZE: 0
+2020-05-11 20:28:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:52196]
+2020-05-11 20:28:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:52196]
+2020-05-11 20:29:36 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:52252]
+2020-05-11 20:29:36 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:52252]
+2020-05-11 20:29:36 INFO NettyEventExecutor - the broker's channel destroyed, 169.254.36.170:10911, clean it's data structure at once
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove brokerAddr[0, 169.254.36.170:10911] from brokerAddrTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove brokerName[broker-a] from brokerAddrTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove brokerName[broker-a], clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove the clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed and no broker in this cluster
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[test_topic] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[broker-a] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[noSuchTopic8] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[TBW102] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[%RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[%RETRY%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[testTopic] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[BenchmarkTest] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[DefaultCluster] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[%DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:29:36 INFO NettyEventExecutor - remove topic[%DLQ%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:30:14 INFO ShutdownHook - shutdown hook was invoked, 1 times.
+2020-05-11 20:30:14 INFO ShutdownHook - shutdown thread NettyEventExecutor interrupt false
+2020-05-11 20:55:52 INFO main - rocketmqHome=/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self
+2020-05-11 20:55:52 INFO main - kvConfigPath=/Users/user01/namesrv/kvConfig.json
+2020-05-11 20:55:52 INFO main - configStorePath=/Users/user01/namesrv/namesrv.properties
+2020-05-11 20:55:52 INFO main - productEnvName=center
+2020-05-11 20:55:52 INFO main - clusterTest=false
+2020-05-11 20:55:52 INFO main - orderMessageEnable=false
+2020-05-11 20:55:52 INFO main - listenPort=9876
+2020-05-11 20:55:52 INFO main - serverWorkerThreads=8
+2020-05-11 20:55:52 INFO main - serverCallbackExecutorThreads=0
+2020-05-11 20:55:52 INFO main - serverSelectorThreads=3
+2020-05-11 20:55:52 INFO main - serverOnewaySemaphoreValue=256
+2020-05-11 20:55:52 INFO main - serverAsyncSemaphoreValue=64
+2020-05-11 20:55:52 INFO main - serverChannelMaxIdleTimeSeconds=120
+2020-05-11 20:55:52 INFO main - serverSocketSndBufSize=65535
+2020-05-11 20:55:52 INFO main - serverSocketRcvBufSize=65535
+2020-05-11 20:55:52 INFO main - serverPooledByteBufAllocatorEnable=true
+2020-05-11 20:55:52 INFO main - useEpollNativeSelector=false
+2020-05-11 20:55:52 INFO main - Server is running in TLS permissive mode
+2020-05-11 20:55:52 INFO main - Tls config file doesn't exist, skip it
+2020-05-11 20:55:52 INFO main - Log the final used tls related configuration
+2020-05-11 20:55:52 INFO main - tls.test.mode.enable = true
+2020-05-11 20:55:52 INFO main - tls.server.need.client.auth = none
+2020-05-11 20:55:52 INFO main - tls.server.keyPath = null
+2020-05-11 20:55:52 INFO main - tls.server.keyPassword = null
+2020-05-11 20:55:52 INFO main - tls.server.certPath = null
+2020-05-11 20:55:52 INFO main - tls.server.authClient = false
+2020-05-11 20:55:52 INFO main - tls.server.trustCertPath = null
+2020-05-11 20:55:52 INFO main - tls.client.keyPath = null
+2020-05-11 20:55:52 INFO main - tls.client.keyPassword = null
+2020-05-11 20:55:52 INFO main - tls.client.certPath = null
+2020-05-11 20:55:52 INFO main - tls.client.authServer = false
+2020-05-11 20:55:52 INFO main - tls.client.trustCertPath = null
+2020-05-11 20:55:53 INFO main - Using OpenSSL provider
+2020-05-11 20:55:53 INFO main - SSLContext created for server
+2020-05-11 20:55:53 INFO NettyEventExecutor - NettyEventExecutor service started
+2020-05-11 20:55:53 INFO FileWatchService - FileWatchService service started
+2020-05-11 20:55:53 INFO main - The Name Server boot success. serializeType=JSON
+2020-05-11 20:55:59 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:52652
+2020-05-11 20:55:59 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:52652]
+2020-05-11 20:55:59 INFO RemotingExecutorThread_1 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:55:59 INFO RemotingExecutorThread_1 - new topic registered, noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]
+2020-05-11 20:55:59 INFO RemotingExecutorThread_1 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2020-05-11 20:55:59 INFO RemotingExecutorThread_1 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:55:59 INFO RemotingExecutorThread_1 - new topic registered, TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2020-05-11 20:55:59 INFO RemotingExecutorThread_1 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:55:59 INFO RemotingExecutorThread_1 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2020-05-11 20:55:59 INFO RemotingExecutorThread_1 - new topic registered, testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 20:55:59 INFO RemotingExecutorThread_1 - new topic registered, test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 20:55:59 INFO RemotingExecutorThread_1 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2020-05-11 20:55:59 INFO RemotingExecutorThread_1 - new topic registered, %RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:55:59 INFO RemotingExecutorThread_1 - new topic registered, %DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]
+2020-05-11 20:55:59 INFO RemotingExecutorThread_1 - new topic registered, %RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:55:59 INFO RemotingExecutorThread_1 - new broker registered, 169.254.36.170:10911 HAServer: 169.254.36.170:10912
+2020-05-11 20:56:53 INFO NSScheduledThread1 - --------------------------------------------------------
+2020-05-11 20:56:53 INFO NSScheduledThread1 - configTable SIZE: 0
+2020-05-11 20:57:14 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:52666
+2020-05-11 20:57:14 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:52666]
+2020-05-11 20:57:39 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:52652]
+2020-05-11 20:57:39 INFO NettyEventExecutor - the broker's channel destroyed, 169.254.36.170:10911, clean it's data structure at once
+2020-05-11 20:57:39 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:52652]
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove brokerAddr[0, 169.254.36.170:10911] from brokerAddrTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove brokerName[broker-a] from brokerAddrTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove brokerName[broker-a], clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove the clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed and no broker in this cluster
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[test_topic] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[broker-a] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[noSuchTopic8] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[TBW102] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[%RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[%RETRY%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[testTopic] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[BenchmarkTest] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[DefaultCluster] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[%DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 20:57:39 INFO NettyEventExecutor - remove topic[%DLQ%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 20:57:41 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:52666]
+2020-05-11 20:57:41 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:52666]
+2020-05-11 20:59:14 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:52685
+2020-05-11 20:59:14 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:52685]
+2020-05-11 20:59:14 INFO RemotingExecutorThread_8 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:59:14 INFO RemotingExecutorThread_8 - new topic registered, noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]
+2020-05-11 20:59:14 INFO RemotingExecutorThread_8 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2020-05-11 20:59:14 INFO RemotingExecutorThread_8 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:59:14 INFO RemotingExecutorThread_8 - new topic registered, TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2020-05-11 20:59:14 INFO RemotingExecutorThread_8 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:59:14 INFO RemotingExecutorThread_8 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2020-05-11 20:59:14 INFO RemotingExecutorThread_8 - new topic registered, testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 20:59:14 INFO RemotingExecutorThread_8 - new topic registered, test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 20:59:14 INFO RemotingExecutorThread_8 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2020-05-11 20:59:14 INFO RemotingExecutorThread_8 - new topic registered, %RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:59:14 INFO RemotingExecutorThread_8 - new topic registered, %DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]
+2020-05-11 20:59:14 INFO RemotingExecutorThread_8 - new topic registered, %RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 20:59:14 INFO RemotingExecutorThread_8 - new broker registered, 169.254.36.170:10911 HAServer: 169.254.36.170:10912
+2020-05-11 20:59:29 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:52691
+2020-05-11 20:59:29 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:52691]
+2020-05-11 21:03:18 INFO ShutdownHook - shutdown hook was invoked, 1 times.
+2020-05-11 21:03:18 INFO ShutdownHook - shutdown thread NettyEventExecutor interrupt false
+2020-05-11 21:03:18 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:52685]
+2020-05-11 21:03:18 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:52685]
+2020-05-11 21:03:18 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:52691]
+2020-05-11 21:03:18 INFO NettyEventExecutor - the broker's channel destroyed, 169.254.36.170:10911, clean it's data structure at once
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove brokerAddr[0, 169.254.36.170:10911] from brokerAddrTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove brokerName[broker-a] from brokerAddrTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove brokerName[broker-a], clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove the clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed and no broker in this cluster
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:52691]
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[test_topic] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[broker-a] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[noSuchTopic8] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[TBW102] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[%RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[%RETRY%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[testTopic] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[BenchmarkTest] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[DefaultCluster] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[%DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - remove topic[%DLQ%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 21:03:18 INFO NettyEventExecutor - NettyEventExecutor service end
+2020-05-11 21:03:18 INFO ShutdownHook - join thread NettyEventExecutor eclipse time(ms) 6 90000
+2020-05-11 21:03:18 INFO ShutdownHook - shutdown thread FileWatchService interrupt false
+2020-05-11 21:03:18 INFO FileWatchService - FileWatchService service end
+2020-05-11 21:03:18 INFO ShutdownHook - join thread FileWatchService eclipse time(ms) 1 90000
+2020-05-11 21:03:18 INFO ShutdownHook - shutdown hook done, consuming time total(ms): 10
+2020-05-11 23:36:31 INFO main - rocketmqHome=/Users/user01/workcontext/rocketMq/rocketmq-all-4.4.0/self
+2020-05-11 23:36:31 INFO main - kvConfigPath=/Users/user01/namesrv/kvConfig.json
+2020-05-11 23:36:31 INFO main - configStorePath=/Users/user01/namesrv/namesrv.properties
+2020-05-11 23:36:31 INFO main - productEnvName=center
+2020-05-11 23:36:31 INFO main - clusterTest=false
+2020-05-11 23:36:31 INFO main - orderMessageEnable=false
+2020-05-11 23:36:31 INFO main - listenPort=9876
+2020-05-11 23:36:31 INFO main - serverWorkerThreads=8
+2020-05-11 23:36:31 INFO main - serverCallbackExecutorThreads=0
+2020-05-11 23:36:31 INFO main - serverSelectorThreads=3
+2020-05-11 23:36:31 INFO main - serverOnewaySemaphoreValue=256
+2020-05-11 23:36:31 INFO main - serverAsyncSemaphoreValue=64
+2020-05-11 23:36:31 INFO main - serverChannelMaxIdleTimeSeconds=120
+2020-05-11 23:36:31 INFO main - serverSocketSndBufSize=65535
+2020-05-11 23:36:31 INFO main - serverSocketRcvBufSize=65535
+2020-05-11 23:36:31 INFO main - serverPooledByteBufAllocatorEnable=true
+2020-05-11 23:36:31 INFO main - useEpollNativeSelector=false
+2020-05-11 23:36:32 INFO main - Server is running in TLS permissive mode
+2020-05-11 23:36:32 INFO main - Tls config file doesn't exist, skip it
+2020-05-11 23:36:32 INFO main - Log the final used tls related configuration
+2020-05-11 23:36:32 INFO main - tls.test.mode.enable = true
+2020-05-11 23:36:32 INFO main - tls.server.need.client.auth = none
+2020-05-11 23:36:32 INFO main - tls.server.keyPath = null
+2020-05-11 23:36:32 INFO main - tls.server.keyPassword = null
+2020-05-11 23:36:32 INFO main - tls.server.certPath = null
+2020-05-11 23:36:32 INFO main - tls.server.authClient = false
+2020-05-11 23:36:32 INFO main - tls.server.trustCertPath = null
+2020-05-11 23:36:32 INFO main - tls.client.keyPath = null
+2020-05-11 23:36:32 INFO main - tls.client.keyPassword = null
+2020-05-11 23:36:32 INFO main - tls.client.certPath = null
+2020-05-11 23:36:32 INFO main - tls.client.authServer = false
+2020-05-11 23:36:32 INFO main - tls.client.trustCertPath = null
+2020-05-11 23:36:33 INFO main - Using OpenSSL provider
+2020-05-11 23:36:33 INFO main - SSLContext created for server
+2020-05-11 23:36:33 INFO NettyEventExecutor - NettyEventExecutor service started
+2020-05-11 23:36:33 INFO FileWatchService - FileWatchService service started
+2020-05-11 23:36:33 INFO main - The Name Server boot success. serializeType=JSON
+2020-05-11 23:36:53 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53095
+2020-05-11 23:36:53 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53095]
+2020-05-11 23:36:53 INFO RemotingExecutorThread_1 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:36:53 INFO RemotingExecutorThread_1 - new topic registered, noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]
+2020-05-11 23:36:53 INFO RemotingExecutorThread_1 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2020-05-11 23:36:53 INFO RemotingExecutorThread_1 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:36:53 INFO RemotingExecutorThread_1 - new topic registered, TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2020-05-11 23:36:53 INFO RemotingExecutorThread_1 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:36:53 INFO RemotingExecutorThread_1 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2020-05-11 23:36:53 INFO RemotingExecutorThread_1 - new topic registered, testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 23:36:53 INFO RemotingExecutorThread_1 - new topic registered, test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 23:36:53 INFO RemotingExecutorThread_1 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2020-05-11 23:36:53 INFO RemotingExecutorThread_1 - new topic registered, %RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:36:53 INFO RemotingExecutorThread_1 - new topic registered, %DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]
+2020-05-11 23:36:53 INFO RemotingExecutorThread_1 - new topic registered, %RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:36:53 INFO RemotingExecutorThread_1 - new broker registered, 169.254.36.170:10911 HAServer: 169.254.36.170:10912
+2020-05-11 23:37:33 INFO NSScheduledThread1 - --------------------------------------------------------
+2020-05-11 23:37:33 INFO NSScheduledThread1 - configTable SIZE: 0
+2020-05-11 23:37:43 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53104
+2020-05-11 23:37:43 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53104]
+2020-05-11 23:38:15 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53120
+2020-05-11 23:38:15 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53120]
+2020-05-11 23:39:50 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53104]
+2020-05-11 23:39:50 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53104]
+2020-05-11 23:39:52 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53139
+2020-05-11 23:39:52 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53139]
+2020-05-11 23:40:02 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53120]
+2020-05-11 23:40:02 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53120]
+2020-05-11 23:40:11 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53151
+2020-05-11 23:40:11 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53151]
+2020-05-11 23:41:07 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53151]
+2020-05-11 23:41:07 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53151]
+2020-05-11 23:41:17 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53173
+2020-05-11 23:41:17 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53173]
+2020-05-11 23:43:15 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53173]
+2020-05-11 23:43:15 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53173]
+2020-05-11 23:43:34 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53201
+2020-05-11 23:43:34 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53201]
+2020-05-11 23:44:31 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53201]
+2020-05-11 23:44:31 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53201]
+2020-05-11 23:44:36 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53216
+2020-05-11 23:44:36 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53216]
+2020-05-11 23:44:37 WARN NettyServerCodecThread_1 - NETTY SERVER PIPELINE: IDLE exception [127.0.0.1:53095]
+2020-05-11 23:44:37 INFO NettyEventExecutor - the broker's channel destroyed, 169.254.36.170:10911, clean it's data structure at once
+2020-05-11 23:44:37 INFO NettyServerNIOSelector_3_1 - closeChannel: close the connection to remote address[127.0.0.1:53095] result: true
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove brokerAddr[0, 169.254.36.170:10911] from brokerAddrTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove brokerName[broker-a] from brokerAddrTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove brokerName[broker-a], clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove the clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed and no broker in this cluster
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[test_topic] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[broker-a] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[noSuchTopic8] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[TBW102] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[%RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[%RETRY%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[testTopic] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[BenchmarkTest] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[DefaultCluster] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53095]
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53095]
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[%DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:44:37 INFO NettyEventExecutor - remove topic[%DLQ%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:45:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53216]
+2020-05-11 23:45:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53216]
+2020-05-11 23:45:39 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53232
+2020-05-11 23:45:39 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53232]
+2020-05-11 23:45:48 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53233
+2020-05-11 23:45:48 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53233]
+2020-05-11 23:45:48 INFO RemotingExecutorThread_2 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:45:48 INFO RemotingExecutorThread_2 - new topic registered, noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]
+2020-05-11 23:45:48 INFO RemotingExecutorThread_2 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2020-05-11 23:45:48 INFO RemotingExecutorThread_2 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:45:48 INFO RemotingExecutorThread_2 - new topic registered, TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2020-05-11 23:45:48 INFO RemotingExecutorThread_2 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:45:48 INFO RemotingExecutorThread_2 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2020-05-11 23:45:48 INFO RemotingExecutorThread_2 - new topic registered, testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 23:45:48 INFO RemotingExecutorThread_2 - new topic registered, test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 23:45:48 INFO RemotingExecutorThread_2 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2020-05-11 23:45:48 INFO RemotingExecutorThread_2 - new topic registered, %RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:45:48 INFO RemotingExecutorThread_2 - new topic registered, %DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]
+2020-05-11 23:45:48 INFO RemotingExecutorThread_2 - new topic registered, %RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:45:48 INFO RemotingExecutorThread_2 - new broker registered, 169.254.36.170:10911 HAServer: 169.254.36.170:10912
+2020-05-11 23:45:50 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53233]
+2020-05-11 23:45:50 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53233]
+2020-05-11 23:45:50 INFO NettyEventExecutor - the broker's channel destroyed, 169.254.36.170:10911, clean it's data structure at once
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove brokerAddr[0, 169.254.36.170:10911] from brokerAddrTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove brokerName[broker-a] from brokerAddrTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove brokerName[broker-a], clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove the clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed and no broker in this cluster
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[test_topic] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[broker-a] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[noSuchTopic8] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[TBW102] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[%RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[%RETRY%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[testTopic] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[BenchmarkTest] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[DefaultCluster] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[%DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:45:50 INFO NettyEventExecutor - remove topic[%DLQ%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:46:02 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53258
+2020-05-11 23:46:02 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53258]
+2020-05-11 23:46:02 INFO RemotingExecutorThread_3 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:46:02 INFO RemotingExecutorThread_3 - new topic registered, noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]
+2020-05-11 23:46:02 INFO RemotingExecutorThread_3 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2020-05-11 23:46:02 INFO RemotingExecutorThread_3 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:46:02 INFO RemotingExecutorThread_3 - new topic registered, TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2020-05-11 23:46:02 INFO RemotingExecutorThread_3 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:46:02 INFO RemotingExecutorThread_3 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2020-05-11 23:46:02 INFO RemotingExecutorThread_3 - new topic registered, testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 23:46:02 INFO RemotingExecutorThread_3 - new topic registered, test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 23:46:02 INFO RemotingExecutorThread_3 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2020-05-11 23:46:02 INFO RemotingExecutorThread_3 - new topic registered, %RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:46:02 INFO RemotingExecutorThread_3 - new topic registered, %DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]
+2020-05-11 23:46:02 INFO RemotingExecutorThread_3 - new topic registered, %RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:46:02 INFO RemotingExecutorThread_3 - new broker registered, 169.254.36.170:10911 HAServer: 169.254.36.170:10912
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - unregisterBroker, remove from brokerLiveTable OK, 169.254.36.170:10911
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - unregisterBroker, remove addr from brokerAddrTable OK, 169.254.36.170:10911
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - unregisterBroker, remove name from brokerAddrTable OK, broker-a
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - unregisterBroker, remove name from clusterAddrTable OK, broker-a
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - unregisterBroker, remove cluster from clusterAddrTable DefaultCluster
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove one broker's topic test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove the topic all queue test_topic
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove one broker's topic RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove the topic all queue RMQ_SYS_TRANS_HALF_TOPIC
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove one broker's topic broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove the topic all queue broker-a
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove one broker's topic noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove the topic all queue noSuchTopic8
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove one broker's topic SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove the topic all queue SELF_TEST_TOPIC
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove one broker's topic TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove the topic all queue TBW102
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove one broker's topic %RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove the topic all queue %RETRY%myGroup
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove one broker's topic testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove the topic all queue testTopic
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove one broker's topic BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove the topic all queue BenchmarkTest
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove one broker's topic DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove the topic all queue DefaultCluster
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove one broker's topic OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove the topic all queue OFFSET_MOVED_EVENT
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove one broker's topic %RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove the topic all queue %RETRY%TOOLS_CONSUMER
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove one broker's topic %DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]
+2020-05-11 23:46:12 INFO RemotingExecutorThread_6 - removeTopicByBrokerName, remove the topic all queue %DLQ%myGroup
+2020-05-11 23:46:12 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53258]
+2020-05-11 23:46:12 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53258]
+2020-05-11 23:46:26 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53320
+2020-05-11 23:46:26 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53320]
+2020-05-11 23:46:26 INFO RemotingExecutorThread_2 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:46:26 INFO RemotingExecutorThread_2 - new topic registered, noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]
+2020-05-11 23:46:26 INFO RemotingExecutorThread_2 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2020-05-11 23:46:26 INFO RemotingExecutorThread_2 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:46:26 INFO RemotingExecutorThread_2 - new topic registered, TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2020-05-11 23:46:26 INFO RemotingExecutorThread_2 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:46:26 INFO RemotingExecutorThread_2 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2020-05-11 23:46:26 INFO RemotingExecutorThread_2 - new topic registered, testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 23:46:26 INFO RemotingExecutorThread_2 - new topic registered, test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 23:46:26 INFO RemotingExecutorThread_2 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2020-05-11 23:46:26 INFO RemotingExecutorThread_2 - new topic registered, %RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:46:26 INFO RemotingExecutorThread_2 - new topic registered, %DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]
+2020-05-11 23:46:26 INFO RemotingExecutorThread_2 - new topic registered, %RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:46:26 INFO RemotingExecutorThread_2 - new broker registered, 169.254.36.170:10911 HAServer: 169.254.36.170:10912
+2020-05-11 23:47:33 INFO NSScheduledThread1 - --------------------------------------------------------
+2020-05-11 23:47:33 INFO NSScheduledThread1 - configTable SIZE: 0
+2020-05-11 23:50:33 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53232]
+2020-05-11 23:50:33 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53232]
+2020-05-11 23:50:43 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53359
+2020-05-11 23:50:43 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53359]
+2020-05-11 23:51:05 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53359]
+2020-05-11 23:51:05 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53359]
+2020-05-11 23:51:13 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53371
+2020-05-11 23:51:13 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53371]
+2020-05-11 23:51:46 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53371]
+2020-05-11 23:51:46 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53371]
+2020-05-11 23:51:57 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53382
+2020-05-11 23:51:57 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53382]
+2020-05-11 23:53:43 WARN NettyServerCodecThread_4 - NETTY SERVER PIPELINE: IDLE exception [127.0.0.1:53320]
+2020-05-11 23:53:43 INFO NettyEventExecutor - the broker's channel destroyed, 169.254.36.170:10911, clean it's data structure at once
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove brokerAddr[0, 169.254.36.170:10911] from brokerAddrTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove brokerName[broker-a] from brokerAddrTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyServerNIOSelector_3_3 - closeChannel: close the connection to remote address[127.0.0.1:53320] result: true
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove brokerName[broker-a], clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove the clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed and no broker in this cluster
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[test_topic] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[broker-a] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[noSuchTopic8] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53320]
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[TBW102] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[%RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[%RETRY%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53320]
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[testTopic] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[BenchmarkTest] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[DefaultCluster] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[%DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:53:43 INFO NettyEventExecutor - remove topic[%DLQ%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:55:03 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53414
+2020-05-11 23:55:03 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53414]
+2020-05-11 23:55:03 INFO RemotingExecutorThread_7 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:55:03 INFO RemotingExecutorThread_7 - new topic registered, noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]
+2020-05-11 23:55:03 INFO RemotingExecutorThread_7 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2020-05-11 23:55:03 INFO RemotingExecutorThread_7 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:55:03 INFO RemotingExecutorThread_7 - new topic registered, TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2020-05-11 23:55:03 INFO RemotingExecutorThread_7 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:55:03 INFO RemotingExecutorThread_7 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2020-05-11 23:55:03 INFO RemotingExecutorThread_7 - new topic registered, testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 23:55:03 INFO RemotingExecutorThread_7 - new topic registered, test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-11 23:55:03 INFO RemotingExecutorThread_7 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2020-05-11 23:55:03 INFO RemotingExecutorThread_7 - new topic registered, %RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:55:03 INFO RemotingExecutorThread_7 - new topic registered, %DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]
+2020-05-11 23:55:03 INFO RemotingExecutorThread_7 - new topic registered, %RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-11 23:55:03 INFO RemotingExecutorThread_7 - new broker registered, 169.254.36.170:10911 HAServer: 169.254.36.170:10912
+2020-05-11 23:55:04 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53414]
+2020-05-11 23:55:04 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53414]
+2020-05-11 23:55:04 INFO NettyEventExecutor - the broker's channel destroyed, 169.254.36.170:10911, clean it's data structure at once
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove brokerAddr[0, 169.254.36.170:10911] from brokerAddrTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove brokerName[broker-a] from brokerAddrTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove brokerName[broker-a], clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove the clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed and no broker in this cluster
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[test_topic] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[broker-a] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[noSuchTopic8] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[TBW102] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[%RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[%RETRY%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[testTopic] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[BenchmarkTest] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[DefaultCluster] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[%DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-11 23:55:04 INFO NettyEventExecutor - remove topic[%DLQ%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-11 23:55:06 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53139]
+2020-05-11 23:55:06 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53139]
+2020-05-11 23:55:09 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53382]
+2020-05-11 23:55:09 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53382]
+2020-05-11 23:57:33 INFO NSScheduledThread1 - --------------------------------------------------------
+2020-05-11 23:57:33 INFO NSScheduledThread1 - configTable SIZE: 0
+2020-05-12 00:07:33 INFO NSScheduledThread1 - --------------------------------------------------------
+2020-05-12 00:07:33 INFO NSScheduledThread1 - configTable SIZE: 0
+2020-05-12 00:09:17 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53543
+2020-05-12 00:09:17 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53543]
+2020-05-12 00:09:17 INFO RemotingExecutorThread_5 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-12 00:09:17 INFO RemotingExecutorThread_5 - new topic registered, noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]
+2020-05-12 00:09:17 INFO RemotingExecutorThread_5 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2020-05-12 00:09:17 INFO RemotingExecutorThread_5 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-12 00:09:17 INFO RemotingExecutorThread_5 - new topic registered, TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2020-05-12 00:09:17 INFO RemotingExecutorThread_5 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-12 00:09:17 INFO RemotingExecutorThread_5 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2020-05-12 00:09:17 INFO RemotingExecutorThread_5 - new topic registered, testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-12 00:09:17 INFO RemotingExecutorThread_5 - new topic registered, test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]
+2020-05-12 00:09:17 INFO RemotingExecutorThread_5 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2020-05-12 00:09:17 INFO RemotingExecutorThread_5 - new topic registered, %RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-12 00:09:17 INFO RemotingExecutorThread_5 - new topic registered, %DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]
+2020-05-12 00:09:17 INFO RemotingExecutorThread_5 - new topic registered, %RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2020-05-12 00:09:17 INFO RemotingExecutorThread_5 - new broker registered, 169.254.36.170:10911 HAServer: 169.254.36.170:10912
+2020-05-12 00:09:33 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53548
+2020-05-12 00:09:33 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53548]
+2020-05-12 00:10:15 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53559
+2020-05-12 00:10:15 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53559]
+2020-05-12 00:10:32 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53569
+2020-05-12 00:10:32 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53569]
+2020-05-12 00:11:02 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53559]
+2020-05-12 00:11:02 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53559]
+2020-05-12 00:11:26 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53577
+2020-05-12 00:11:26 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53577]
+2020-05-12 00:11:59 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53577]
+2020-05-12 00:11:59 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53577]
+2020-05-12 00:12:06 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53589
+2020-05-12 00:12:06 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53589]
+2020-05-12 00:12:35 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53589]
+2020-05-12 00:12:35 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53589]
+2020-05-12 00:12:43 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53601
+2020-05-12 00:12:43 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53601]
+2020-05-12 00:13:17 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53548]
+2020-05-12 00:13:17 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53548]
+2020-05-12 00:13:24 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53616
+2020-05-12 00:13:24 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53616]
+2020-05-12 00:13:32 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53569]
+2020-05-12 00:13:32 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53569]
+2020-05-12 00:13:37 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53625
+2020-05-12 00:13:37 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53625]
+2020-05-12 00:13:54 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53601]
+2020-05-12 00:13:54 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53601]
+2020-05-12 00:13:56 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53625]
+2020-05-12 00:13:56 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53625]
+2020-05-12 00:14:01 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:53636
+2020-05-12 00:14:01 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:53636]
+2020-05-12 00:16:04 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53616]
+2020-05-12 00:16:04 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53616]
+2020-05-12 00:16:06 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53543]
+2020-05-12 00:16:06 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53543]
+2020-05-12 00:16:06 INFO NettyEventExecutor - the broker's channel destroyed, 169.254.36.170:10911, clean it's data structure at once
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove brokerAddr[0, 169.254.36.170:10911] from brokerAddrTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove brokerName[broker-a] from brokerAddrTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove brokerName[broker-a], clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove the clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed and no broker in this cluster
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[test_topic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[test_topic] all queue, from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[broker-a] all queue, from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[noSuchTopic8 QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[noSuchTopic8] all queue, from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[TBW102 QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[TBW102] all queue, from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[%RETRY%myGroup QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[%RETRY%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[testTopic QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[testTopic] all queue, from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[BenchmarkTest] all queue, from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[DefaultCluster] all queue, from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT] all queue, from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[%RETRY%TOOLS_CONSUMER] all queue, from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[%DLQ%myGroup QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2020-05-12 00:16:06 INFO NettyEventExecutor - remove topic[%DLQ%myGroup] all queue, from topicQueueTable, because channel destroyed
+2020-05-12 00:16:07 INFO ShutdownHook - shutdown hook was invoked, 1 times.
+2020-05-12 00:16:07 INFO ShutdownHook - shutdown thread NettyEventExecutor interrupt false
+2020-05-12 00:16:07 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:53636]
+2020-05-12 00:16:07 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:53636]
+2020-05-12 00:16:07 INFO NettyEventExecutor - NettyEventExecutor service end
+2020-05-12 00:16:07 INFO ShutdownHook - join thread NettyEventExecutor eclipse time(ms) 1 90000
+2020-05-12 00:16:07 INFO ShutdownHook - shutdown thread FileWatchService interrupt false
+2020-05-12 00:16:07 INFO FileWatchService - FileWatchService service end
+2020-05-12 00:16:07 INFO ShutdownHook - join thread FileWatchService eclipse time(ms) 1 90000
+2020-05-12 00:16:07 INFO ShutdownHook - shutdown hook done, consuming time total(ms): 3

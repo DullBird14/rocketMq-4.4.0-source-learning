@@ -10,8 +10,8 @@ import org.apache.rocketmq.common.message.MessageExt;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static main.java.org.dullbird.demo.Constants.MY_GROUP;
-import static main.java.org.dullbird.demo.Constants.TOPIC;
+import static org.dullbird.demo.Constants.MY_GROUP;
+import static org.dullbird.demo.Constants.TOPIC;
 
 /**
  * @author dullBird
@@ -23,7 +23,8 @@ public class ConsumerA {
     public static void main(String[] args) throws MQClientException {
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer(MY_GROUP);
         consumer.setNamesrvAddr("127.0.0.1:9876");
-        consumer.subscribe(TOPIC, "*");
+        String topic = "SCHEDULE_TOPIC_XXXX";
+        consumer.subscribe(topic, "*");
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs, ConsumeConcurrentlyContext context) {
@@ -39,7 +40,7 @@ public class ConsumerA {
             }
         });
         consumer.start();
-        System.out.printf("===================consumer start==========================\n");
+        System.out.printf("===================consumer start==========================\n" + topic);
 
 //
 //        DefaultMQPushConsumer consumer2 = new DefaultMQPushConsumer(MY_GROUP + 2);
