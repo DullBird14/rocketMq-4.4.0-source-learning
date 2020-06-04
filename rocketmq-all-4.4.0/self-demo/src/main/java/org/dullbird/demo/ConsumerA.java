@@ -23,7 +23,7 @@ public class ConsumerA {
     public static void main(String[] args) throws MQClientException {
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer(MY_GROUP);
         consumer.setNamesrvAddr("127.0.0.1:9876");
-        String topic = "SCHEDULE_TOPIC_XXXX";
+        String topic = "noSuchTopic8";
         consumer.subscribe(topic, "*");
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
