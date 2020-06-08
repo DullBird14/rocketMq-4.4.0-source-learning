@@ -25,9 +25,18 @@ import java.util.HashMap;
 import java.util.List;
 import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
 
+/**
+ * topic对应的信息
+ */
 public class TopicRouteData extends RemotingSerializable {
     private String orderTopicConf;
+    /**
+     * 消息队列的信息
+     */
     private List<QueueData> queueDatas;
+    /**
+     * broker的信息
+     */
     private List<BrokerData> brokerDatas;
     private HashMap<String/* brokerAddr */, List<String>/* Filter Server */> filterServerTable;
 

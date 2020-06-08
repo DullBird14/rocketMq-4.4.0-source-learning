@@ -74,6 +74,7 @@ public class SendMessageProcessor extends AbstractSendMessageProcessor implement
             case RequestCode.CONSUMER_SEND_MSG_BACK:
                 return this.consumerSendMsgBack(ctx, request);
             default:
+                //如果是provider的消息
                 // 处理请求头
                 SendMessageRequestHeader requestHeader = parseRequestHeader(request);
                 if (requestHeader == null) {
@@ -264,8 +265,11 @@ public class SendMessageProcessor extends AbstractSendMessageProcessor implement
                                       RemotingCommand request,
                                       MessageExt msg, TopicConfig topicConfig) {
         String newTopic = requestHeader.getTopic();
+        // 如果是重试队列
         if (null != newTopic && newTopic.startsWith(MixAll.RETRY_GROUP_TOPIC_PREFIX)) {
+            //真实队列名称
             String groupName = newTopic.substring(MixAll.RETRY_GROUP_TOPIC_PREFIX.length());
+            // 查看是否存在真实队列
             SubscriptionGroupConfig subscriptionGroupConfig =
                 this.brokerController.getSubscriptionGroupManager().findSubscriptionGroupConfig(groupName);
             if (null == subscriptionGroupConfig) {
@@ -276,10 +280,12 @@ public class SendMessageProcessor extends AbstractSendMessageProcessor implement
             }
 
             int maxReconsumeTimes = subscriptionGroupConfig.getRetryMaxTimes();
+            // 版本兼容代码，略
             if (request.getVersion() >= MQVersion.Version.V3_4_9.ordinal()) {
                 maxReconsumeTimes = requestHeader.getMaxReconsumeTimes();
             }
             int reconsumeTimes = requestHeader.getReconsumeTimes() == null ? 0 : requestHeader.getReconsumeTimes();
+            // 如果超过，判断死信队列
             if (reconsumeTimes >= maxReconsumeTimes) {
                 newTopic = MixAll.getDLQTopic(groupName);
                 int queueIdInt = Math.abs(this.random.nextInt() % 99999999) % DLQ_NUMS_PER_GROUP;
@@ -297,6 +303,7 @@ public class SendMessageProcessor extends AbstractSendMessageProcessor implement
             }
         }
         int sysFlag = requestHeader.getSysFlag();
+        // 如果是multi类型的设置 multi位
         if (TopicFilterType.MULTI_TAG == topicConfig.getTopicFilterType()) {
             sysFlag |= MessageSysFlag.MULTI_TAGS_FLAG;
         }
@@ -311,7 +318,7 @@ public class SendMessageProcessor extends AbstractSendMessageProcessor implement
         // 构建返回值请求
         final RemotingCommand response = RemotingCommand.createResponseCommand(SendMessageResponseHeader.class);
         final SendMessageResponseHeader responseHeader = (SendMessageResponseHeader)response.readCustomHeader();
-
+        // todo 还不知道干嘛的
         response.setOpaque(request.getOpaque());
 
         response.addExtField(MessageConst.PROPERTY_MSG_REGION, this.brokerController.getBrokerConfig().getRegionId());
@@ -320,7 +327,7 @@ public class SendMessageProcessor extends AbstractSendMessageProcessor implement
         log.debug("receive SendMessage request command, {}", request);
 
         final long startTimstamp = this.brokerController.getBrokerConfig().getStartAcceptSendRequestTimeStamp();
-        // 校验是否已经超时，todo 根据传过来的时间戳，会不会可能机器时间不同导致的问题
+        // 检查broker是否开始接收数据，todo 根据传过来的时间戳，会不会可能机器时间不同导致的问题
         if (this.brokerController.getMessageStore().now() < startTimstamp) {
             response.setCode(ResponseCode.SYSTEM_ERROR);
             response.setRemark(String.format("broker unable to service, until %s", UtilAll.timeMillisToHumanString2(startTimstamp)));
@@ -328,7 +335,7 @@ public class SendMessageProcessor extends AbstractSendMessageProcessor implement
         }
 
         response.setCode(-1);
-        // todo 检查消息
+        // 检查topic是否存在
         super.msgCheck(ctx, requestHeader, response);
         if (response.getCode() != -1) {
             return response;
@@ -343,7 +350,7 @@ public class SendMessageProcessor extends AbstractSendMessageProcessor implement
             // 如果队列id小于0，那么随机选择一个队列
             queueIdInt = Math.abs(this.random.nextInt() % 99999999) % topicConfig.getWriteQueueNums();
         }
-
+        // 创建MessageExtBrokerInner
         MessageExtBrokerInner msgInner = new MessageExtBrokerInner();
         msgInner.setTopic(requestHeader.getTopic());
         msgInner.setQueueId(queueIdInt);
@@ -357,15 +364,19 @@ public class SendMessageProcessor extends AbstractSendMessageProcessor implement
         msgInner.setFlag(requestHeader.getFlag());
         MessageAccessor.setProperties(msgInner, MessageDecoder.string2messageProperties(requestHeader.getProperties()));
         msgInner.setPropertiesString(requestHeader.getProperties());
+        // 生产的时间
         msgInner.setBornTimestamp(requestHeader.getBornTimestamp());
+        // 产生这个消息的ip
         msgInner.setBornHost(ctx.channel().remoteAddress());
+        // 存储这个信息的ip
         msgInner.setStoreHost(this.getStoreHost());
+        // 重试消费的次数
         msgInner.setReconsumeTimes(requestHeader.getReconsumeTimes() == null ? 0 : requestHeader.getReconsumeTimes());
         PutMessageResult putMessageResult = null;
         Map<String, String> oriProps = MessageDecoder.string2messageProperties(requestHeader.getProperties());
         String traFlag = oriProps.get(MessageConst.PROPERTY_TRANSACTION_PREPARED);
         if (traFlag != null && Boolean.parseBoolean(traFlag)) {
-            // 如果是事务消息
+            // 如果是事务消息--略
             if (this.brokerController.getBrokerConfig().isRejectTransactionMessage()) {
                 // broker是否配置不允许发送事务消息
                 response.setCode(ResponseCode.NO_PERMISSION);

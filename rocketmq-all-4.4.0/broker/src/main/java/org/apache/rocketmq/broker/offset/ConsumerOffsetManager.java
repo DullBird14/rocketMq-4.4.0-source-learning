@@ -118,6 +118,14 @@ public class ConsumerOffsetManager extends ConfigManager {
         return groups;
     }
 
+    /**
+     * 提交消费进度
+     * @param clientHost
+     * @param group
+     * @param topic
+     * @param queueId
+     * @param offset
+     */
     public void commitOffset(final String clientHost, final String group, final String topic, final int queueId,
         final long offset) {
         // topic@group
@@ -125,6 +133,13 @@ public class ConsumerOffsetManager extends ConfigManager {
         this.commitOffset(clientHost, key, queueId, offset);
     }
 
+    /**
+     * 提交消费进度
+     * @param clientHost
+     * @param key
+     * @param queueId
+     * @param offset
+     */
     private void commitOffset(final String clientHost, final String key, final int queueId, final long offset) {
         ConcurrentMap<Integer, Long> map = this.offsetTable.get(key);
         if (null == map) {
@@ -134,7 +149,9 @@ public class ConsumerOffsetManager extends ConfigManager {
         } else {
             Long storeOffset = map.put(queueId, offset);
             if (storeOffset != null && offset < storeOffset) {
-                log.warn("[NOTIFYME]update consumer offset less than store. clientHost={}, key={}, queueId={}, requestOffset={}, storeOffset={}", clientHost, key, queueId, offset, storeOffset);
+                log.warn("[NOTIFYME]update consumer offset less than store." +
+                        " clientHost={}, key={}, queueId={}, requestOffset={}, storeOffset={}",
+                        clientHost, key, queueId, offset, storeOffset);
             }
         }
     }

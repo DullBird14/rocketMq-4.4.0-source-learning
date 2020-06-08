@@ -226,6 +226,14 @@ public class TopicConfigManager extends ConfigManager {
         return topicConfig;
     }
 
+    /**
+     * 创建topic的messageQueue
+     * @param topic
+     * @param clientDefaultTopicQueueNums
+     * @param perm
+     * @param topicSysFlag
+     * @return
+     */
     public TopicConfig createTopicInSendMessageBackMethod(
         final String topic,
         final int clientDefaultTopicQueueNums,

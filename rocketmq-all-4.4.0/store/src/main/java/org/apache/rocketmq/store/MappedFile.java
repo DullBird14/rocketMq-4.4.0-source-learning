@@ -198,16 +198,23 @@ public class MappedFile extends ReferenceResource {
         return appendMessagesInner(messageExtBatch, cb);
     }
 
+    /**
+     * 写入消息的方法
+     * @param messageExt
+     * @param cb
+     * @return
+     */
     public AppendMessageResult appendMessagesInner(final MessageExt messageExt, final AppendMessageCallback cb) {
         assert messageExt != null;
         assert cb != null;
-
+        // 当前写入的位置
         int currentPos = this.wrotePosition.get();
 
         if (currentPos < this.fileSize) {
             ByteBuffer byteBuffer = writeBuffer != null ? writeBuffer.slice() : this.mappedByteBuffer.slice();
             byteBuffer.position(currentPos);
             AppendMessageResult result = null;
+            // 根据批量还是单条写入消息
             if (messageExt instanceof MessageExtBrokerInner) {
                 result = cb.doAppend(this.getFileFromOffset(), byteBuffer, this.fileSize - currentPos, (MessageExtBrokerInner) messageExt);
             } else if (messageExt instanceof MessageExtBatch) {
@@ -227,6 +234,11 @@ public class MappedFile extends ReferenceResource {
         return this.fileFromOffset;
     }
 
+    /**
+     * mmap 写入数据
+     * @param data
+     * @return
+     */
     public boolean appendMessage(final byte[] data) {
         int currentPos = this.wrotePosition.get();
 

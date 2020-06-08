@@ -68,6 +68,7 @@ public class PullRequestHoldService extends ServiceThread {
         log.info("{} service started", this.getServiceName());
         while (!this.isStopped()) {
             try {
+                // 5秒轮询一次
                 if (this.brokerController.getBrokerConfig().isLongPollingEnable()) {
                     this.waitForRunning(5 * 1000);
                 } else {
@@ -101,6 +102,7 @@ public class PullRequestHoldService extends ServiceThread {
                 int queueId = Integer.parseInt(kArray[1]);
                 final long offset = this.brokerController.getMessageStore().getMaxOffsetInQueue(topic, queueId);
                 try {
+                    // 通知有mq消息了
                     this.notifyMessageArriving(topic, queueId, offset);
                 } catch (Throwable e) {
                     log.error("check hold request failed. topic={}, queueId={}", topic, queueId, e);
@@ -115,6 +117,7 @@ public class PullRequestHoldService extends ServiceThread {
 
     public void notifyMessageArriving(final String topic, final int queueId, final long maxOffset, final Long tagsCode,
         long msgStoreTime, byte[] filterBitMap, Map<String, String> properties) {
+        // 获取topic@queueId
         String key = this.buildKey(topic, queueId);
         ManyPullRequest mpr = this.pullRequestTable.get(key);
         if (mpr != null) {
@@ -124,10 +127,11 @@ public class PullRequestHoldService extends ServiceThread {
 
                 for (PullRequest request : requestList) {
                     long newestOffset = maxOffset;
+                    // 如果当前队列的位置小于等于 请求的位置，更新到最新进度
                     if (newestOffset <= request.getPullFromThisOffset()) {
                         newestOffset = this.brokerController.getMessageStore().getMaxOffsetInQueue(topic, queueId);
                     }
-
+                    // 如果consumeQueue 比 请求的位置大。说明有消息
                     if (newestOffset > request.getPullFromThisOffset()) {
                         boolean match = request.getMessageFilter().isMatchedByConsumeQueue(tagsCode,
                             new ConsumeQueueExt.CqExtUnit(tagsCode, msgStoreTime, filterBitMap));

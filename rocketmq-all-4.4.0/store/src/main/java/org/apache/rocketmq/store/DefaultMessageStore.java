@@ -66,7 +66,10 @@ public class DefaultMessageStore implements MessageStore {
     private final MessageStoreConfig messageStoreConfig;
     // CommitLog
     private final CommitLog commitLog;
-
+    /**
+     * consumeQueue的存储
+     * 1. <topic, <queueId, ConsumeQueue>>
+     */
     private final ConcurrentMap<String/* topic */, ConcurrentMap<Integer/* queueId */, ConsumeQueue>> consumeQueueTable;
 
     private final FlushConsumeQueueService flushConsumeQueueService;
@@ -103,7 +106,10 @@ public class DefaultMessageStore implements MessageStore {
     private StoreCheckpoint storeCheckpoint;
 
     private AtomicLong printTimes = new AtomicLong(0);
-
+    /**
+     * org.apache.rocketmq.store.DefaultMessageStore#DefaultMessageStore(org.apache.rocketmq.store.config.MessageStoreConfig, org.apache.rocketmq.store.stats.BrokerStatsManager, org.apache.rocketmq.store.MessageArrivingListener, org.apache.rocketmq.common.BrokerConfig)
+     * 里面只有consumerQueue和IndexQueue
+     */
     private final LinkedList<CommitLogDispatcher> dispatcherList;
 
     private RandomAccessFile lockFile;
@@ -142,7 +148,7 @@ public class DefaultMessageStore implements MessageStore {
         this.allocateMappedFileService.start();
 
         this.indexService.start();
-
+        // init dispatcherList
         this.dispatcherList = new LinkedList<>();
         this.dispatcherList.addLast(new CommitLogDispatcherBuildConsumeQueue());
         this.dispatcherList.addLast(new CommitLogDispatcherBuildIndex());
@@ -302,6 +308,11 @@ public class DefaultMessageStore implements MessageStore {
         }
     }
 
+    /**
+     * 添加消息
+     * @param msg Message instance to store
+     * @return
+     */
     public PutMessageResult putMessage(MessageExtBrokerInner msg) {
         if (this.shutdown) {
             log.warn("message store has shutdown, so putMessage is forbidden");
@@ -350,7 +361,7 @@ public class DefaultMessageStore implements MessageStore {
         long beginTime = this.getSystemClock().now();
         // 把消息提交到 commitLog
         PutMessageResult result = this.commitLog.putMessage(msg);
-
+        // 处理时间
         long eclipseTime = this.getSystemClock().now() - beginTime;
         if (eclipseTime > 500) {
             log.warn("putMessage not in lock eclipse time(ms)={}, bodyLength={}", eclipseTime, msg.getBody().length);
@@ -463,9 +474,9 @@ public class DefaultMessageStore implements MessageStore {
         long maxOffset = 0;
 
         GetMessageResult getResult = new GetMessageResult();
-
+        // 获取commitlog的最大位置
         final long maxOffsetPy = this.commitLog.getMaxOffset();
-
+        // 获取对应的ConsumeQueue
         ConsumeQueue consumeQueue = findConsumeQueue(topic, queueId);
         if (consumeQueue != null) {
             minOffset = consumeQueue.getMinOffsetInQueue();
@@ -1383,6 +1394,7 @@ public class DefaultMessageStore implements MessageStore {
      * @param dispatchRequest
      */
     public void putMessagePositionInfo(DispatchRequest dispatchRequest) {
+        // 根据topich和队列找到 ConsumeQueue
         ConsumeQueue cq = this.findConsumeQueue(dispatchRequest.getTopic(), dispatchRequest.getQueueId());
         cq.putMessagePositionInfoWrapper(dispatchRequest);
     }
@@ -1657,14 +1669,21 @@ public class DefaultMessageStore implements MessageStore {
         }
     }
 
+    /**
+     * consumeQueue刷盘服务
+     */
     class FlushConsumeQueueService extends ServiceThread {
         private static final int RETRY_TIMES_OVER = 3;
+        /**
+         * 最后刷盘的时间
+         */
         private long lastFlushTimestamp = 0;
 
         private void doFlush(int retryTimes) {
             int flushConsumeQueueLeastPages = DefaultMessageStore.this.getMessageStoreConfig().getFlushConsumeQueueLeastPages();
-
+            // 重试次数
             if (retryTimes == RETRY_TIMES_OVER) {
+                // 强制刷新。用于shutdown
                 flushConsumeQueueLeastPages = 0;
             }
 
@@ -1672,6 +1691,7 @@ public class DefaultMessageStore implements MessageStore {
 
             int flushConsumeQueueThoroughInterval = DefaultMessageStore.this.getMessageStoreConfig().getFlushConsumeQueueThoroughInterval();
             long currentTimeMillis = System.currentTimeMillis();
+            // 当时间满足flushConsumeQueueThoroughInterval时，即使写入的数量不足flushConsumeQueueLeastPages，也进行flush
             if (currentTimeMillis >= (this.lastFlushTimestamp + flushConsumeQueueThoroughInterval)) {
                 this.lastFlushTimestamp = currentTimeMillis;
                 flushConsumeQueueLeastPages = 0;
@@ -1679,7 +1699,7 @@ public class DefaultMessageStore implements MessageStore {
             }
 
             ConcurrentMap<String, ConcurrentMap<Integer, ConsumeQueue>> tables = DefaultMessageStore.this.consumeQueueTable;
-
+            // 进行刷盘
             for (ConcurrentMap<Integer, ConsumeQueue> maps : tables.values()) {
                 for (ConsumeQueue cq : maps.values()) {
                     boolean result = false;
@@ -1688,7 +1708,7 @@ public class DefaultMessageStore implements MessageStore {
                     }
                 }
             }
-
+            // flush 存储 check point
             if (0 == flushConsumeQueueLeastPages) {
                 if (logicsMsgTimestamp > 0) {
                     DefaultMessageStore.this.getStoreCheckpoint().setLogicsMsgTimestamp(logicsMsgTimestamp);
@@ -1757,29 +1777,41 @@ public class DefaultMessageStore implements MessageStore {
             super.shutdown();
         }
 
+        /**
+         * 剩余需要重放的数量
+         * @return
+         */
         public long behind() {
             return DefaultMessageStore.this.commitLog.getMaxOffset() - this.reputFromOffset;
         }
 
+        /**
+         * 重方位置是不是比commitlog的位置小
+         * @return
+         */
         private boolean isCommitLogAvailable() {
             return this.reputFromOffset < DefaultMessageStore.this.commitLog.getMaxOffset();
         }
 
+        /**
+         * 重访逻辑
+         */
         private void doReput() {
+            // 如果commit最大日志位置大于重访标记的位置，进行重放
             for (boolean doNext = true; this.isCommitLogAvailable() && doNext; ) {
-
+                // todo 不知道是啥。
                 if (DefaultMessageStore.this.getMessageStoreConfig().isDuplicationEnable()
                     && this.reputFromOffset >= DefaultMessageStore.this.getConfirmOffset()) {
                     break;
                 }
-                //获取 reputFromOffset 位置对应的 MMP文件缓存池
+                //获取commitlog- reputFromOffset 位置对应的 MMP文件缓存池
                 SelectMappedBufferResult result = DefaultMessageStore.this.commitLog.getData(reputFromOffset);
                 if (result != null) {
                     try {
                         this.reputFromOffset = result.getStartOffset();
                         // 遍历
                         for (int readSize = 0; readSize < result.getSize() && doNext; ) {
-                            // 生成重放请求。
+                            // 生成重放请求。读取了一条commitlog的消息
                             DispatchRequest dispatchRequest =
                                 DefaultMessageStore.this.commitLog.checkMessageAndReturnSize(result.getByteBuffer(), false, false);
                             // 消息长度
@@ -1810,6 +1842,7 @@ public class DefaultMessageStore implements MessageStore {
                                             .addAndGet(dispatchRequest.getMsgSize());
                                     }
                                 } else if (size == 0) {
+                                    //读取到文件的结尾
                                     this.reputFromOffset = DefaultMessageStore.this.commitLog.rollNextFile(this.reputFromOffset);
                                     readSize = result.getSize();
                                 }

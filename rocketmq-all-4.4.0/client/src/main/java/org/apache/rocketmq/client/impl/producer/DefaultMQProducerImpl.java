@@ -1164,7 +1164,7 @@ public class DefaultMQProducerImpl implements MQProducerInner {
         if (topicPublishInfo != null && topicPublishInfo.ok()) {
             MessageQueue mq = null;
             try {
-                // 用选择器选择一个队列
+                // 用选择器选择一个队列（hash,机房,随机）
                 mq = selector.select(topicPublishInfo.getMessageQueueList(), msg, arg);
             } catch (Throwable e) {
                 throw new MQClientException("select message queue throwed exception.", e);

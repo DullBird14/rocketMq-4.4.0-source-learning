@@ -39,6 +39,7 @@ public class ConsumeQueue {
 
     private final String storePath;
     private final int mappedFileSize;
+    /**当前重放过的最大位置**/
     private long maxPhysicOffset = -1;
     private volatile long minLogicOffset = 0;
     private ConsumeQueueExt consumeQueueExt = null;
@@ -375,12 +376,17 @@ public class ConsumeQueue {
         return this.minLogicOffset / CQ_STORE_UNIT_SIZE;
     }
 
+    /**
+     * 把一个commitlog的信息。填到consumQueue中
+     * @param request
+     */
     public void putMessagePositionInfoWrapper(DispatchRequest request) {
+        // 最大尝试次数和是否可以写
         final int maxRetries = 30;
         boolean canWrite = this.defaultMessageStore.getRunningFlags().isCQWriteable();
         for (int i = 0; i < maxRetries && canWrite; i++) {
             long tagsCode = request.getTagsCode();
-            // 额外信息的索引
+            // 是否可以写额外信息
             if (isExtWriteEnable()) {
                 ConsumeQueueExt.CqExtUnit cqExtUnit = new ConsumeQueueExt.CqExtUnit();
                 cqExtUnit.setFilterBitMap(request.getBitMap());
@@ -422,23 +428,24 @@ public class ConsumeQueue {
 
     private boolean putMessagePositionInfo(final long offset, final int size, final long tagsCode,
         final long cqOffset) {
-
+        // 如果已经重放过。跳过
         if (offset <= this.maxPhysicOffset) {
             return true;
         }
-
+        // 构建信息。一条20字节。存放 commitlog的位置，长度，tagsCode
         this.byteBufferIndex.flip();
         this.byteBufferIndex.limit(CQ_STORE_UNIT_SIZE);
         this.byteBufferIndex.putLong(offset);
         this.byteBufferIndex.putInt(size);
         this.byteBufferIndex.putLong(tagsCode);
-
+        // 计算存储位置，todo 是什么还不太清楚 cqOffset
         final long expectLogicOffset = cqOffset * CQ_STORE_UNIT_SIZE;
 
         MappedFile mappedFile = this.mappedFileQueue.getLastMappedFile(expectLogicOffset);
         if (mappedFile != null) {
-
+            // 获取到文件
             if (mappedFile.isFirstCreateInQueue() && cqOffset != 0 && mappedFile.getWrotePosition() == 0) {
+                //todo 不清楚为什么前置填充空白
                 this.minLogicOffset = expectLogicOffset;
                 this.mappedFileQueue.setFlushedWhere(expectLogicOffset);
                 this.mappedFileQueue.setCommittedWhere(expectLogicOffset);
@@ -467,6 +474,7 @@ public class ConsumeQueue {
                     );
                 }
             }
+            // 设置commitLog重放消息到ConsumeQueue位置。
             this.maxPhysicOffset = offset;
             return mappedFile.appendMessage(this.byteBufferIndex.array());
         }

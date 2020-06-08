@@ -192,28 +192,32 @@ public class MappedFileQueue {
     }
 
     public MappedFile getLastMappedFile(final long startOffset, boolean needCreate) {
+        // -1是默认情况。有文件的时候，不需要创建
         long createOffset = -1;
         MappedFile mappedFileLast = getLastMappedFile();
-
+        // 没有一个文件
         if (mappedFileLast == null) {
             createOffset = startOffset - (startOffset % this.mappedFileSize);
         }
-
+        // 文件满了
         if (mappedFileLast != null && mappedFileLast.isFull()) {
             createOffset = mappedFileLast.getFileFromOffset() + this.mappedFileSize;
         }
 
         if (createOffset != -1 && needCreate) {
+            // 需要创建文件的时候
             String nextFilePath = this.storePath + File.separator + UtilAll.offset2FileName(createOffset);
             String nextNextFilePath = this.storePath + File.separator
                 + UtilAll.offset2FileName(createOffset + this.mappedFileSize);
             MappedFile mappedFile = null;
 
             if (this.allocateMappedFileService != null) {
+                // 如果存在 allocateMappedFileService 利用allocateMappedFileService 创建下一个 mappedFile
                 mappedFile = this.allocateMappedFileService.putRequestAndReturnMappedFile(nextFilePath,
                     nextNextFilePath, this.mappedFileSize);
             } else {
                 try {
+                    // 利用mmp创建一个文件
                     mappedFile = new MappedFile(nextFilePath, this.mappedFileSize);
                 } catch (IOException e) {
                     log.error("create mappedFile exception", e);
@@ -233,19 +237,32 @@ public class MappedFileQueue {
         return mappedFileLast;
     }
 
+    /**
+     * 创建一个文件，
+     * 分为第一个，
+     * 和其他
+     * @param startOffset
+     * @return
+     */
     public MappedFile getLastMappedFile(final long startOffset) {
         return getLastMappedFile(startOffset, true);
     }
 
+    /**
+     * 获取最后一个文件
+     * @return
+     */
     public MappedFile getLastMappedFile() {
         MappedFile mappedFileLast = null;
 
         while (!this.mappedFiles.isEmpty()) {
             try {
+                // 获取最后一个文件
                 mappedFileLast = this.mappedFiles.get(this.mappedFiles.size() - 1);
                 break;
             } catch (IndexOutOfBoundsException e) {
                 //continue;
+                // todo unknow 为什么继续？怕文件都删了么？
             } catch (Exception e) {
                 log.error("getLastMappedFile has exception.", e);
                 break;

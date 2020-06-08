@@ -31,6 +31,9 @@ public class TopicPublishInfo {
      */
     private List<MessageQueue> messageQueueList = new ArrayList<MessageQueue>();
     private volatile ThreadLocalIndex sendWhichQueue = new ThreadLocalIndex();
+    /**
+     * topic对应的信息
+     */
     private TopicRouteData topicRouteData;
 
     public boolean isOrderTopic() {

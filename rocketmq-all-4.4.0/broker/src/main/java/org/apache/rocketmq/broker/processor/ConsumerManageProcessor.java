@@ -53,6 +53,7 @@ public class ConsumerManageProcessor implements NettyRequestProcessor {
             case RequestCode.GET_CONSUMER_LIST_BY_GROUP:
                 return this.getConsumerListByGroup(ctx, request);
             case RequestCode.UPDATE_CONSUMER_OFFSET:
+                // 更新消费状态
                 return this.updateConsumerOffset(ctx, request);
             case RequestCode.QUERY_CONSUMER_OFFSET:
                 return this.queryConsumerOffset(ctx, request);
@@ -108,7 +109,8 @@ public class ConsumerManageProcessor implements NettyRequestProcessor {
         final UpdateConsumerOffsetRequestHeader requestHeader =
             (UpdateConsumerOffsetRequestHeader) request
                 .decodeCommandCustomHeader(UpdateConsumerOffsetRequestHeader.class);
-        this.brokerController.getConsumerOffsetManager().commitOffset(RemotingHelper.parseChannelRemoteAddr(ctx.channel()), requestHeader.getConsumerGroup(),
+        this.brokerController.getConsumerOffsetManager().commitOffset(RemotingHelper
+                        .parseChannelRemoteAddr(ctx.channel()), requestHeader.getConsumerGroup(),
             requestHeader.getTopic(), requestHeader.getQueueId(), requestHeader.getCommitOffset());
         response.setCode(ResponseCode.SUCCESS);
         response.setRemark(null);

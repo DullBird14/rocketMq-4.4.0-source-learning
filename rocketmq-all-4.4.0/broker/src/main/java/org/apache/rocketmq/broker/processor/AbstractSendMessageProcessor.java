@@ -159,8 +159,16 @@ public abstract class AbstractSendMessageProcessor implements NettyRequestProces
         return response;
     }
 
+    /**
+     * 检查topic是否存在
+     * @param ctx
+     * @param requestHeader
+     * @param response
+     * @return
+     */
     protected RemotingCommand msgCheck(final ChannelHandlerContext ctx,
         final SendMessageRequestHeader requestHeader, final RemotingCommand response) {
+        //检查broker是否允许写入，//todo isOrderTopic
         if (!PermName.isWriteable(this.brokerController.getBrokerConfig().getBrokerPermission())
             && this.brokerController.getTopicConfigManager().isOrderTopic(requestHeader.getTopic())) {
             response.setCode(ResponseCode.NO_PERMISSION);
@@ -214,6 +222,7 @@ public abstract class AbstractSendMessageProcessor implements NettyRequestProces
 
         int queueIdInt = requestHeader.getQueueId();
         int idValid = Math.max(topicConfig.getWriteQueueNums(), topicConfig.getReadQueueNums());
+        // 检查请求的队列id是否合理
         if (queueIdInt >= idValid) {
             String errorInfo = String.format("request queueId[%d] is illegal, %s Producer: %s",
                 queueIdInt,
@@ -274,23 +283,33 @@ public abstract class AbstractSendMessageProcessor implements NettyRequestProces
         }
     }
 
+    /**
+     * 处理消息发送的头部信息
+     * @param request
+     * @return
+     * @throws RemotingCommandException
+     */
     protected SendMessageRequestHeader parseRequestHeader(RemotingCommand request)
         throws RemotingCommandException {
 
         SendMessageRequestHeaderV2 requestHeaderV2 = null;
         SendMessageRequestHeader requestHeader = null;
         switch (request.getCode()) {
+            // 批量发送，v2版本的发送
             case RequestCode.SEND_BATCH_MESSAGE:
             case RequestCode.SEND_MESSAGE_V2:
                 requestHeaderV2 =
                     (SendMessageRequestHeaderV2) request
                         .decodeCommandCustomHeader(SendMessageRequestHeaderV2.class);
+            // 消息发送
             case RequestCode.SEND_MESSAGE:
                 if (null == requestHeaderV2) {
+                    //如果v2创建失败。尝试创建普通的
                     requestHeader =
                         (SendMessageRequestHeader) request
                             .decodeCommandCustomHeader(SendMessageRequestHeader.class);
                 } else {
+                    // 如果已经有v2了转换为v1对象，----此处代码感觉很不优雅
                     requestHeader = SendMessageRequestHeaderV2.createSendMessageRequestHeaderV1(requestHeaderV2);
                 }
             default:
